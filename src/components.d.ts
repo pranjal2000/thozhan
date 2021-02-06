@@ -15,6 +15,7 @@ export namespace Components {
     interface AppRoot {
     }
     interface NgoAbout {
+        "ngo": any;
     }
     interface NgoCauses {
     }
@@ -96,6 +97,7 @@ declare namespace LocalJSX {
     interface AppRoot {
     }
     interface NgoAbout {
+        "ngo"?: any;
     }
     interface NgoCauses {
     }

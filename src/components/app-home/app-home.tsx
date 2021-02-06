@@ -1568,7 +1568,7 @@ componentDidLoad() {
         {/*
         <!-- Start Footer Area --> */}
         
-        {/* <footer class="footer-section pt-100">
+        <footer class="footer-section pt-100">
           <div class="container">
             <div class="row">
               <div class="col-lg-3 col-md-6 col-sm-6">
@@ -1578,13 +1578,13 @@ componentDidLoad() {
                   <div class="footer-info-contact">
                     <i class="flaticon-pin"></i>
                     <h3>Location</h3>
-                    <span>205 Fida Walinton, Tongo <br /> New York, Canada</span>
+                    <span>{this.ngo.address}</span>
                   </div>
 
                   <div class="footer-info-contact">
                     <i class="flaticon-call"></i>
                     <h3>Call Us</h3>
-                    <span><a href="tel:+882-569-756">987-0986-0987</a></span>
+                    <span><a href="tel:+882-569-756">{this.ngo.reachOut.phone1}</a></span>
                   </div>
 
                   <div class="footer-info-contact">
@@ -1592,7 +1592,7 @@ componentDidLoad() {
                     <h3>Email Us</h3>
                     <span>
                       <a href="mailto:hello@huruma.com">
-                        support@huruma.com
+                        {this.ngo.reachOut.email}
                       </a>
                     </span>
                   </div>
@@ -1610,12 +1610,12 @@ componentDidLoad() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/donate">
                         Donate Now
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/volunteer">
                         Become a Volunteer
                       </a>
                     </li>
@@ -1625,7 +1625,7 @@ componentDidLoad() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/contact">
                         Contact Us
                       </a>
                     </li>
@@ -1649,7 +1649,7 @@ componentDidLoad() {
 
                   <ul class="footer-quick-links">
                     <li>
-                      <a href="#">
+                      <a href="/donate">
                         Donate
                       </a>
                     </li>
@@ -1693,17 +1693,17 @@ componentDidLoad() {
 
                   <div class="footer-news">
                     <a href="single-blog.html">
-                      <img src="assets/img/footer-news/1.jpg" alt="image" />
-                      <h4>Support about poverty to poor family</h4>
-                      <span>Poor, 22 January</span>
+                      <img src="assets/img/footer-news/1.jpg"alt="image" />
+                      <h4>{this.ngo.media[0].name}</h4>
+                      <span>{this.ngo.media[0].PublicationName}</span>
                     </a>
                   </div>
 
                   <div class="footer-news">
                     <a href="single-blog.html">
                       <img src="assets/img/footer-news/2.jpg" alt="image" />
-                      <h4>Mostly suffered school Boys care</h4>
-                      <span>Health, 24 February</span>
+                      <h4>{this.ngo.media[1].name}</h4>
+                      <span>{this.ngo.media[1].PublicationName}</span>
                     </a>
                   </div>
                 </div>
@@ -1717,7 +1717,7 @@ componentDidLoad() {
                 <div class="row align-items-center">
                   <div class="col-lg-4">
                     <div class="copyright-logo">
-                      <img src="assets/img/white-logo.png" alt="image" />
+                      <img src={this.ngo.logo.url} alt="image" />
                     </div>
                   </div>
 
@@ -1745,17 +1745,17 @@ componentDidLoad() {
               </div>
             </div>
           </div>
-        </footer> */}
+        </footer>
         {/*
         <!-- End Footer Area --> */}
 
         {/*
         <!-- Start Go Top Section --> */}
-        {/* <div class="go-top">
+        <div class="go-top">
           <i class="bx bx-chevron-up"></i>
           <i class="bx bx-chevron-up"></i>
-        </div> */}
-        <ngo-footer></ngo-footer>
+        </div>
+        {/* <ngo-footer></ngo-footer> */}
         {/*
         <!-- End Go Top Section --> */}
         </ion-content>
