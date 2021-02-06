@@ -737,7 +737,7 @@ componentDidLoad() {
                   <div class="causes-content">
                     <span>#Education</span>
                     <h3>{this.ngo.projects[0].name}</h3>
-                    {/* <p>{this.ngo.projects[0].description}</p> */}
+                    <p>{ this.ngo.projects[0].description < 60 ? this.ngo.projects[0].description : this.ngo.projects[0].description.substring(0, 60) + '...' }</p>
                     <p></p>
 
                     <div class="causes-progress-bar">
@@ -751,7 +751,7 @@ componentDidLoad() {
                       <p>Raised by 60 people within 10 days</p>
                     </div>
 
-                    <a href="/donate" class="causes-btn-one">
+                    <a href={this.ngo.projects[0].link} class="causes-btn-one">
                       Donate Now
                       <i class="flaticon-right"></i>
                     </a>
@@ -769,7 +769,7 @@ componentDidLoad() {
                   <div class="causes-content">
                     <span>#Donation</span>
                     <h3>{this.ngo.projects[1].name}</h3>
-                    {/* <p>{this.ngo.projects[1].description}</p> */}
+                    <p>{ this.ngo.projects[1].description < 60 ? this.ngo.projects[1].description : this.ngo.projects[1].description.substring(0, 60) + '...' }</p>
                     <p></p>
 
                     <div class="causes-progress-bar">
@@ -783,7 +783,7 @@ componentDidLoad() {
                       <p>Raised by 40 people within 12 days</p>
                     </div>
 
-                    <a href="/donate" class="causes-btn-one">
+                    <a href={this.ngo.projects[1].link} class="causes-btn-one">
                       Donate Now
                       <i class="flaticon-right"></i>
                     </a>
@@ -801,7 +801,7 @@ componentDidLoad() {
                   <div class="causes-content">
                     <span>#Helpless</span>
                     <h3>{this.ngo.projects[3].name}</h3>
-                    {/* <p>{this.ngo.projects[2].description}</p> */}
+                    <p>{ this.ngo.projects[3].description < 60 ? this.ngo.projects[3].description : this.ngo.projects[3].description.substring(0, 60) + '...' }</p>
                     <p></p>
 
                     <div class="causes-progress-bar">
@@ -815,7 +815,7 @@ componentDidLoad() {
                       <p>Raised by 50people within 20days</p>
                     </div>
 
-                    <a href="/donate" class="causes-btn-one">
+                    <a href={this.ngo.projects[3].link} class="causes-btn-one">
                       Donate Now
                       <i class="flaticon-right"></i>
                     </a>

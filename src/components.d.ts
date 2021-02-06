@@ -27,6 +27,7 @@ export namespace Components {
         "ngo": any;
     }
     interface NgoTeam {
+        "ngo": any;
     }
 }
 declare global {
@@ -111,6 +112,7 @@ declare namespace LocalJSX {
         "ngo"?: any;
     }
     interface NgoTeam {
+        "ngo"?: any;
     }
     interface IntrinsicElements {
         "app-home": AppHome;

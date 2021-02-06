@@ -431,7 +431,7 @@ componentDidLoad() {
                 </div>
 
                 <div class="row">
-                {this.ngo.projects.slice(0, 8).map(m => (
+                {this.ngo.projects.slice(0, 9).map(m => (
                     <div class="col-lg-4 col-md-6">
                         <div class="single-causes">
                             <img src={m.photo.url} alt="image"/>
@@ -455,8 +455,8 @@ componentDidLoad() {
                                     <p>Raised by 60 people within 10 days</p>
                                 </div>
                                 
-                                <a href="single-causes.html" class="causes-btn-one">
-                                    Donate Now
+                                <a href={m.link} class="causes-btn-one">
+                                    Visit
                                     <i class="flaticon-right"></i>
                                 </a>
                             </div>

@@ -5,3 +5,7 @@ app-home {
     height: 270px;
 
 }
+.team-item img{
+    width: 380px;
+    height: 350px;
+}
