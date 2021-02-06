@@ -1,13 +1,4 @@
-.white-logo{
-    width: 10%;
-    padding-bottom: 20px;
-    /* margin-right: 5px; */
-}
-.black-logo{
-    width: 10%;
-    padding-bottom: 20px;
-    /* margin-right: 5px; */
-}
+
 .sml{
     width: 50%;
     /* margin-top: 50px; */
@@ -17,7 +8,7 @@
 
 }
 .single-blog img{
-    height: 200px;
+    height: 250px;
     width: 100%;
 }
 .single-causes img{
@@ -27,4 +18,16 @@
 .team-image img{
     width: 380px;
     height: 250px;
+}
+.footer-news img{
+    width: 80px;
+    height: 68px;
+}
+.logo img{
+    width: 100px;
+    height: 80px;
+}
+.navbar-brand img{
+    width: 230px;
+    height: 140px;
 }

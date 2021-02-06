@@ -427,7 +427,7 @@ componentDidLoad() {
                     <i class="flaticon-care-about-plants"></i>
                     About us
                   </span>
-                  <h3>An International Independent Charity Organization</h3>
+                  <h3>The Organization focused on building People</h3>
                   <p class="main-color">
                   {this.ngo.mission}
                   </p>

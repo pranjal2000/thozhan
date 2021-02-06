@@ -76,7 +76,7 @@ componentDidLoad() {
                 <div class="container">
                     <div class="huruma-responsive-menu">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="/">
                                 <img src="assets/img/logo.png" class="white-logo" alt="logo"/>
                                 <img src="assets/img/logo-2.png" class="black-logo" alt="image"/>
                             </a>
@@ -97,11 +97,11 @@ componentDidLoad() {
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a href="/"class="nav-link active">
-                                        <span>o1</span>
-                                        Home 
-                                        <i class='bx bx-chevron-down'></i>
+                                        {/* <span>o1 </span> */}
+                                        Home
+                                        {/* <i class='bx bx-chevron-down'> </i> */}
                                     </a>
-                                    <ul class="dropdown-menu">
+                                    {/* <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <a href="index.html" class="nav-link">
                                                 Home One
@@ -125,22 +125,23 @@ componentDidLoad() {
                                                 Home Four
                                             </a>
                                         </li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
 
                                 <li class="nav-item">
                                     <a href="/about" class="nav-link">
-                                        <span>o2</span>
+                                        {/* <span>o2</span> */}
                                         About
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
                                     <a href="/causes" class="nav-link">
-                                        <span>o3</span>
-                                        Causes 
+                                        {/* <span>o3</span> */}
+                                        Causes
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
+                                    
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <a href="/causes" class="nav-link">
@@ -158,7 +159,7 @@ componentDidLoad() {
 
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        <span>o4</span>
+                                        {/* <span>o4</span> */}
                                         Pages 
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
@@ -251,8 +252,8 @@ componentDidLoad() {
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <span>o5</span>
+                                    <a href="/media" class="nav-link">
+                                        {/* <span>o5</span> */}
                                         Blog 
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
@@ -279,7 +280,7 @@ componentDidLoad() {
 
                                 <li class="nav-item">
                                     <a href="/contact" class="nav-link">
-                                        <span>o6</span>
+                                        {/* <span>o6</span> */}
                                         Contact
                                     </a>
                                 </li>
@@ -315,6 +316,7 @@ componentDidLoad() {
                                         </a>
                                     </div>
                                 </div>
+                                <span> </span>
 
                                 <div class="option-item"><i class="search-btn bx bx-search"></i>
                                     <i class="close-btn bx bx-x"></i>
@@ -330,6 +332,7 @@ componentDidLoad() {
                                         </div>
                                     </div>
                                 </div>
+                                <span> </span>
 
                                 <div class="burger-menu">
                                     <i class="flaticon-menu"></i>
@@ -463,8 +466,9 @@ componentDidLoad() {
                   <div class="container">
                     <div class="main-banner-content main-banner-content-four text-center">
                       <span>{this.ngo.name}</span>
-                      <h1>It is more difficult to give money away </h1>
-                      <p>Our vision: {this.ngo.vision}.</p>
+                      <h1>Start where you are Use what you have Do what you can</h1>
+                      {/* <p>Our vision: {this.ngo.vision}.</p> */}
+                      <p>– Arthur Ashe</p>
                       <div class="banner-btn">
                         <a href="/donate" class="optional-btn">
                           Donate Now
@@ -487,8 +491,9 @@ componentDidLoad() {
                   <div class="container">
                     <div class="main-banner-content main-banner-content-four text-center">
                       <span>{this.ngo.name}</span>
-                      <h1>It is more difficult to give money away </h1>
-                      <p>Our vision: {this.ngo.vision}</p>
+                      <h1>Start where you are Use what you have Do what you can</h1>
+                      {/* <p>Our vision: {this.ngo.vision}</p> */}
+                      <p>– Arthur Ashe</p>
                       <div class="banner-btn">
                         <a href="/donate" class="optional-btn">
                           Donate Now
@@ -511,8 +516,8 @@ componentDidLoad() {
                   <div class="container">
                     <div class="main-banner-content main-banner-content-four text-center">
                       <span>{this.ngo.name}</span>
-                      <h1>It is more difficult to give money away </h1>
-                      <p>Our vision: {this.ngo.vision}</p>
+                      <h1>Start where you are Use what you have Do what you can </h1>
+                      <p> – Arthur Ashe</p>
                       <div class="banner-btn">
                         <a href="/donate" class="optional-btn">
                           Donate Now
@@ -539,16 +544,15 @@ componentDidLoad() {
         <section class="feature-section">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+              <div class="col-lg-4 col-md-6 col-sm-6 p-0">
                 <div class="feature-card">
                   <div class="icon">
                     <img src="assets/img/icon/1.png" alt="image" />
                     <img src="assets/img/icon/white-1.png" alt="image" />
                   </div>
 
-                  <h3>Become A Volunteer</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididun labore
-                    voluptatem accusantium.</p>
+                  <h3>Join as Volunteer</h3>
+                  <p>Think of giving not as a duty but as a privilege.</p>
 
                   <a href="#" class="feature-btn">
                     Join now +
@@ -556,16 +560,15 @@ componentDidLoad() {
                 </div>
               </div>
 
-              <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+              <div class="col-lg-4 col-md-6 col-sm-6 p-0">
                 <div class="feature-card">
                   <div class="icon">
                     <img src="assets/img/icon/2.png" alt="image" />
                     <img src="assets/img/icon/white-2.png" alt="image" />
                   </div>
 
-                  <h3>Quick Fundraiser</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididun labore
-                    voluptatem accusantium.</p>
+                  <h3>Donate once</h3>
+                  <p>For it is in giving that we receive.</p>
 
                   <a href="#" class="feature-btn">
                     Give now +
@@ -573,16 +576,15 @@ componentDidLoad() {
                 </div>
               </div>
 
-              <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+              <div class="col-lg-4 col-md-6 col-sm-6 p-0">
                 <div class="feature-card">
                   <div class="icon">
                     <img src="assets/img/icon/3.png" alt="image" />
                     <img src="assets/img/icon/white-3.png" alt="image" />
                   </div>
 
-                  <h3>Give Donation</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididun labore
-                    voluptatem accusantium.</p>
+                  <h3>Becoming a Champion, Monthly donation</h3>
+                  <p>No one has ever become poor by giving.</p>
 
                   <a href="#" class="feature-btn">
                     Donate now +
@@ -590,7 +592,7 @@ componentDidLoad() {
                 </div>
               </div>
 
-              <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+              {/* <div class="col-lg-3 col-md-6 col-sm-6 p-0">
                 <div class="feature-card">
                   <div class="icon">
                     <img src="assets/img/icon/4.png" alt="image" />
@@ -605,7 +607,7 @@ componentDidLoad() {
                     Be Member +
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -623,7 +625,7 @@ componentDidLoad() {
                     <i class="flaticon-care-about-plants"></i>
                     About us
                   </span>
-                  <h3>An International Independent Charity Organization</h3>
+                  <h3>The Organization focused on building People</h3>
                   <p class="main-color">
                   {this.ngo.mission}
                   </p>
@@ -737,10 +739,10 @@ componentDidLoad() {
                   <div class="causes-content">
                     <span>#Education</span>
                     <h3>{this.ngo.projects[0].name}</h3>
-                    <p>{ this.ngo.projects[0].description < 60 ? this.ngo.projects[0].description : this.ngo.projects[0].description.substring(0, 60) + '...' }</p>
+                    <p>{ this.ngo.projects[0].description < 60 ? this.ngo.projects[0].description : this.ngo.projects[0].description.substring(0, 100) + '...' }</p>
                     <p></p>
 
-                    <div class="causes-progress-bar">
+                    {/* <div class="causes-progress-bar">
                       <div class="causes-progress-content">
                         <span>Raised: $5,000.00</span>
 
@@ -749,7 +751,7 @@ componentDidLoad() {
                         </div>
                       </div>
                       <p>Raised by 60 people within 10 days</p>
-                    </div>
+                    </div> */}
 
                     <a href={this.ngo.projects[0].link} class="causes-btn-one">
                       Donate Now
@@ -769,10 +771,10 @@ componentDidLoad() {
                   <div class="causes-content">
                     <span>#Donation</span>
                     <h3>{this.ngo.projects[1].name}</h3>
-                    <p>{ this.ngo.projects[1].description < 60 ? this.ngo.projects[1].description : this.ngo.projects[1].description.substring(0, 60) + '...' }</p>
+                    <p>{ this.ngo.projects[1].description < 60 ? this.ngo.projects[1].description : this.ngo.projects[1].description.substring(0, 100) + '...' }</p>
                     <p></p>
 
-                    <div class="causes-progress-bar">
+                    {/* <div class="causes-progress-bar">
                       <div class="causes-progress-content">
                         <span>Raised: $4,000.00</span>
 
@@ -781,7 +783,7 @@ componentDidLoad() {
                         </div>
                       </div>
                       <p>Raised by 40 people within 12 days</p>
-                    </div>
+                    </div> */}
 
                     <a href={this.ngo.projects[1].link} class="causes-btn-one">
                       Donate Now
@@ -801,9 +803,9 @@ componentDidLoad() {
                   <div class="causes-content">
                     <span>#Helpless</span>
                     <h3>{this.ngo.projects[3].name}</h3>
-                    <p>{ this.ngo.projects[3].description < 60 ? this.ngo.projects[3].description : this.ngo.projects[3].description.substring(0, 60) + '...' }</p>
+                    <p>{ this.ngo.projects[3].description < 60 ? this.ngo.projects[3].description : this.ngo.projects[3].description.substring(0, 100) + '...' }</p>
                     <p></p>
-
+{/* 
                     <div class="causes-progress-bar">
                       <div class="causes-progress-content">
                         <span>Raised: $1,000.00</span>
@@ -813,7 +815,7 @@ componentDidLoad() {
                         </div>
                       </div>
                       <p>Raised by 50people within 20days</p>
-                    </div>
+                    </div> */}
 
                     <a href={this.ngo.projects[3].link} class="causes-btn-one">
                       Donate Now
@@ -823,6 +825,10 @@ componentDidLoad() {
                 </div>
               </div>
             </div>
+            <a href="/causes" class="causes-btn-one">
+                      <h4>See More<i class="flaticon-right"></i></h4>
+                      {/* <i class="flaticon-right"></i> */}
+                    </a>
           </div>
         </section>
         {/*
@@ -844,7 +850,7 @@ componentDidLoad() {
                   </div>
                   <h3>{this.ngo.whyVolunteerHere[2].text}</h3>
                   {/* <p>Lorem ipsum dolor siamet ecteturadipisicing</p> */}
-                  <a href="#" class="donor-btn">Give Requist +</a>
+                  {/* <a href="#" class="donor-btn">Give Requist +</a> */}
                 </div>
               </div>
 
@@ -855,7 +861,7 @@ componentDidLoad() {
                   </div>
                   <h3>{this.ngo.whyVolunteerHere[1].text}</h3>
                   {/* <p>Dolor Lorem ipsumsiamet ecteturadipisicin</p> */}
-                  <a href="#" class="donor-btn">Get Reaction +</a>
+                  {/* <a href="#" class="donor-btn">Get Reaction +</a> */}
                 </div>
               </div>
 
@@ -866,7 +872,7 @@ componentDidLoad() {
                   </div>
                   <h3>{this.ngo.whyVolunteerHere[0].text}</h3>
                   {/* <p>Lorem ipsum dolor siamet ecteturadipisicing</p> */}
-                  <a href="#" class="donor-btn">Enjoy Now +</a>
+                  {/* <a href="#" class="donor-btn">Enjoy Now +</a> */}
                 </div>
               </div>
             </div>
@@ -891,8 +897,7 @@ componentDidLoad() {
                 What do we care about
               </span>
               <h2>Our Causes</h2>
-              <p>Quis ipsum suspendice consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Quis ipsum suspendices gravida.</p>
+              <p>When learning is purposeful, creativity blossoms. When creativity blossoms, thinking emanates. When thinking emanates, knowledge is fully lit. When knowledge is lit, economy flourishes.</p>
             </div>
 
             <div class="row">
@@ -985,11 +990,11 @@ componentDidLoad() {
                           nisi ex ea </p> */}
 
                         <p>{this.ngo.mission}</p>
-                        <a class="default-btn" href="#">
+                        {/* <a class="default-btn" href="#">
                           Our Mission
                           <span></span>
                           <i class="flaticon-right"></i>
-                        </a>
+                        </a> */}
                       </div>
 
                       <div class="tabs_item">
@@ -998,11 +1003,11 @@ componentDidLoad() {
                           nisi ex ea </p> */}
 
                         <p>{this.ngo.vision}</p>
-                        <a class="default-btn" href="#">
+                        {/* <a class="default-btn" href="#">
                           Our Mission
                           <span></span>
                           <i class="flaticon-right"></i>
-                        </a>
+                        </a> */}
                       </div>
 
                       <div class="tabs_item">
@@ -1013,11 +1018,11 @@ componentDidLoad() {
                         {/* <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, soluta, aspernatur
                           dolorum sequi quisquam ullam in pariatur nihil dolorem cumque excepturi totam. Qui excepturi
                           quasi cumque placeat fuga. Ea, eius?</p> */}
-                        <a class="default-btn" href="#">
+                        {/* <a class="default-btn" href="#">
                           Our Mission
                           <span></span>
                           <i class="flaticon-right"></i>
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                   </div>
@@ -1071,25 +1076,37 @@ componentDidLoad() {
                   <ul class="social-btn">
                   { m.reachOut.facebook.length !== 0 ?
                       <li>
+
                       <a href={m.reachOut.facebook}>
                         <i class="flaticon-facebook"></i>
                       </a>
+                      
                     </li>
+
                       : null }
+                      <span> </span>
                   { m.reachOut.twitter.length !== 0 ?
                       <li>
+
                       <a href={m.reachOut.twitter}>
                         <i class="flaticon-twitter"></i>
                       </a>
+                      
                     </li>
+
                       : null }
+                    <span> </span>
                   { m.reachOut.instagram.length !== 0 ?
                       <li>
+
                       <a href={m.reachOut.instagram}>
                         <i class="flaticon-instagram"></i>
                       </a>
+
                     </li>
+
                       : null }   
+                      <span> </span>  
  
                   </ul>
 
@@ -1099,7 +1116,7 @@ componentDidLoad() {
                   </div>
 
                   <div class="team-icon">
-                    <i class="flaticon-plus"></i>
+                    <i class="flaticon-plus"> </i>
                   </div>
                 </div>
                 </div>
@@ -1693,19 +1710,29 @@ componentDidLoad() {
 
                   <div class="footer-news">
                     <a href="single-blog.html">
-                      <img src="assets/img/footer-news/1.jpg"alt="image" />
+                      <img src={this.ngo.media[0].photo.url}alt="image" />
+                      <span>{this.ngo.media[0].publicationName}</span>
                       <h4>{this.ngo.media[0].name}</h4>
-                      <span>{this.ngo.media[0].PublicationName}</span>
+                      {/* <h5> {this.ngo.media[0].PublicationName}</h5> */}
+                      
                     </a>
                   </div>
 
                   <div class="footer-news">
                     <a href="single-blog.html">
-                      <img src="assets/img/footer-news/2.jpg" alt="image" />
+                      <img src={this.ngo.media[1].photo.url} alt="image" />
+                      <span>{this.ngo.media[1].publicationName}</span>
                       <h4>{this.ngo.media[1].name}</h4>
-                      <span>{this.ngo.media[1].PublicationName}</span>
                     </a>
+                    <br/>
+                    <h4 class ="footer-info-contact">
+                    <a href="/media">
+                     See More
+                    </a>
+                    </h4>
+                    
                   </div>
+                  
                 </div>
               </div>
             </div>
