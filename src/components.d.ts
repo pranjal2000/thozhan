@@ -20,6 +20,7 @@ export namespace Components {
     interface NgoCauses {
     }
     interface NgoContact {
+        "ngo": any;
     }
     interface NgoFooter {
         "ngo": any;
@@ -102,6 +103,7 @@ declare namespace LocalJSX {
     interface NgoCauses {
     }
     interface NgoContact {
+        "ngo"?: any;
     }
     interface NgoFooter {
         "ngo"?: any;

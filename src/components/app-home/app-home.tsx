@@ -278,7 +278,7 @@ componentDidLoad() {
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">
+                                    <a href="/contact" class="nav-link">
                                         <span>o6</span>
                                         Contact
                                     </a>
