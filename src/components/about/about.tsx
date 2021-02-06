@@ -203,7 +203,7 @@ componentDidLoad() {
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="/media" class="nav-link">
+                                    <a href="/causes" class="nav-link">
                                         Blog 
                                         <i class='bx bx-chevron-down'></i>
                                     </a>

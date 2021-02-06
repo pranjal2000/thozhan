@@ -90,7 +90,7 @@ export class NgoCauses{
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="/about" class="nav-link active">
+                                    <a href="/about" class="nav-link">
                                         About
                                     </a>
                                 </li>
@@ -201,7 +201,7 @@ export class NgoCauses{
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="/contact" class="nav-link">
+                                            <a href="/contact" class="nav-link active">
                                                 Contact
                                             </a>
                                         </li>
@@ -209,7 +209,7 @@ export class NgoCauses{
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="/media" class="nav-link">
+                                    <a href="/causes" class="nav-link">
                                         Blog 
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
@@ -235,7 +235,7 @@ export class NgoCauses{
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="/contact" class="nav-link">
+                                    <a href="/contact" class="nav-link active">
                                         Contact
                                     </a>
                                 </li>

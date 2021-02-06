@@ -1,11 +1,11 @@
 import { Component, h, Prop} from '@stencil/core';
-//import * as ngo                 from     '../../assets/ngo.json';
+import * as ngo                 from     '../../assets/thozhan.json';
 @Component({
   tag: 'ngo-causes',
   styleUrl: 'causes.css',
 })
 export class NgoCauses {
- // @Prop() ngo                 :   any                 =   ngo;
+ @Prop() ngo                 :   any                 =   ngo;
  componentWillLoad() {
   console.log('NgoCauses :: componentWillLoad');
 }
@@ -16,7 +16,7 @@ componentDidLoad() {
 
   
   render() {
-
+    var img = 'url(' + this.ngo.photos[6] + ')';
     return [
     <ion-content>
         <div class="preloader">
@@ -33,7 +33,7 @@ componentDidLoad() {
                 <div class="container">
                     <div class="huruma-responsive-menu">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="/">
                                 <img src="assets/img/logo-3.png" class="white-logo" alt="logo"/>
                                 <img src="assets/img/logo-2.png" class="black-logo" alt="image"/>
                             </a>
@@ -53,31 +53,31 @@ componentDidLoad() {
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="/" class="nav-link">
                                         Home 
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="index.html" class="nav-link">
+                                            <a href="/" class="nav-link">
                                                 Home One
                                             </a>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="index-2.html" class="nav-link">
+                                            <a href="/" class="nav-link">
                                                 Home Two
                                             </a>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="index-3.html" class="nav-link">
+                                            <a href="/" class="nav-link">
                                                 Home Three
                                             </a>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="index-4.html" class="nav-link">
+                                            <a href="/" class="nav-link">
                                                 Home Four
                                             </a>
                                         </li>
@@ -85,19 +85,19 @@ componentDidLoad() {
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="about.html" class="nav-link">
+                                    <a href="/about" class="nav-link">
                                         About
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link active">
+                                    <a href="/causes" class="nav-link active">
                                         Causes 
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="causes.html" class="nav-link active">
+                                            <a href="/causes" class="nav-link">
                                                 Causes
                                             </a>
                                         </li>
@@ -118,19 +118,19 @@ componentDidLoad() {
 
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="about.html" class="nav-link">
+                                            <a href="/about" class="nav-link">
                                                 About
                                             </a>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="team.html" class="nav-link">
+                                            <a href="/team" class="nav-link">
                                                 Team
                                             </a>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="gallery.html" class="nav-link">
+                                            <a href="/gallery" class="nav-link">
                                                 Gallery
                                             </a>
                                         </li>
@@ -196,7 +196,7 @@ componentDidLoad() {
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="contact.html" class="nav-link">
+                                            <a href="/contact" class="nav-link">
                                                 Contact
                                             </a>
                                         </li>
@@ -204,7 +204,7 @@ componentDidLoad() {
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="/causes" class="nav-link">
                                         Blog 
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
@@ -230,7 +230,7 @@ componentDidLoad() {
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">
+                                    <a href="/contact" class="nav-link">
                                         Contact
                                     </a>
                                 </li>
@@ -291,124 +291,124 @@ componentDidLoad() {
                 </div>
             </div>
         </div>
-        {/* <!-- End Navbar Area -->
+        {/*  -- End Navbar Area - */}
 
-        <!-- Sidebar Modal --> */}
+        {/*  -- Sidebar Modal - */}
         <div class="sidebar-modal">
-            <div class="sidebar-modal-inner">
-                <div class="sidebar-about-area">
-                    <div class="title">
-                        <h2>About Us</h2>
-                        <p>We believe brand interaction is key in communication. Real innovations and a positive customer experience are the heart of successful communication. No fake products and services. The customer is king, their lives and needs are the inspiration.</p>
-                    </div>
-                </div>
-
-                <div class="sidebar-instagram-feed">
-                    <h2>Instagram</h2>
-                    <ul>
-                        <li>
-							<a href="#">
-								<img src="assets/img/sidebar/1.jpg" alt="image"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/sidebar/2.jpg" alt="image"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/sidebar/3.jpg" alt="image"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/sidebar/4.jpg" alt="image"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/sidebar/5.jpg" alt="image"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/sidebar/6.jpg" alt="image"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/sidebar/7.jpg" alt="image"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/sidebar/8.jpg" alt="image"/>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="sidebar-contact-area">
-                    <div class="contact-info">
-                        <div class="contact-info-content">
-                            <h2>
-                                <a href="tel:+0881306298615">
-                                    +088 130 629 8615
-                                </a>
-                                <span>OR</span>
-                                <a href="mailto:huruma@gmail.com">
-                                    huruma@gmail.com
-                                </a>
-                            </h2>
-    
-                            <ul class="social">
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class="flaticon-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class="flaticon-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class="flaticon-instagram"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class="flaticon-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class="flaticon-pinterest"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <span class="close-btn sidebar-modal-close-btn">
-                    <i class="flaticon-close"></i>
-                </span>
+          <div class="sidebar-modal-inner">
+            <div class="sidebar-about-area">
+              <div class="title">
+                <h2>About Us</h2>
+                <p>{this.ngo.description}</p>
+              </div>
             </div>
+
+            <div class="sidebar-instagram-feed">
+              <h2>Instagram</h2>
+              <ul>
+                <li>
+                  <a href={this.ngo.reachOut.instagram}>
+                    <img src="assets/img/sidebar/1.jpg" alt="image" />
+                  </a>
+                </li>
+                <li>
+                  <a href={this.ngo.reachOut.instagram}>
+                    <img src="assets/img/sidebar/2.jpg"alt="image" />
+                  </a>
+                </li>
+                <li>
+                  <a href={this.ngo.reachOut.instagram}>
+                    <img src="assets/img/sidebar/3.jpg" alt="image" />
+                  </a>
+                </li>
+                <li>
+                  <a href={this.ngo.reachOut.instagram}>
+                    <img src="assets/img/sidebar/4.jpg" alt="image" />
+                  </a>
+                </li>
+                <li>
+                  <a href={this.ngo.reachOut.instagram}>
+                    <img src="assets/img/sidebar/5.jpg" alt="image" />
+                  </a>
+                </li>
+                <li>
+                  <a href={this.ngo.reachOut.instagram}>
+                    <img src="assets/img/sidebar/6.jpg" alt="image" />
+                  </a>
+                </li>
+                <li>
+                  <a href={this.ngo.reachOut.instagram}>
+                    <img src="assets/img/sidebar/7.jpg" alt="image" />
+                  </a>
+                </li>
+                <li>
+                  <a href={this.ngo.reachOut.instagram}>
+                    <img src="assets/img/sidebar/8.jpg" alt="image" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-contact-area">
+              <div class="contact-info">
+                <div class="contact-info-content">
+                  <h2>
+                    <a href="#">
+                      {this.ngo.reachOut.phone1}
+                    </a>
+                    <span>OR</span>
+                    <a href='#'>
+                      {this.ngo.reachOut.email}
+                    </a>
+                  </h2>
+
+                  <ul class="social">
+                    <li>
+                      <a href={this.ngo.reachOut.facebook} target="_blank">
+                        <i class="flaticon-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href={this.ngo.reachOut.twitter} target="_blank">
+                        <i class="flaticon-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href={this.ngo.reachOut.instagram} target="_blank">
+                        <i class="flaticon-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href={this.ngo.reachOut.linkedin} target="_blank">
+                        <i class="flaticon-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href={this.ngo.reachOut.pinterest} target="_blank">
+                        <i class="flaticon-pinterest"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <span class="close-btn sidebar-modal-close-btn">
+              <i class="flaticon-close"></i>
+            </span>
+          </div>
         </div>
         {/* <!-- End Sidebar Modal -->
         
         <!-- Start Page Title Area --> */}
-        <div class="page-title-area">
+        <div class="page-title-area" style={{'background-image': img}}> 
             <div class="d-table">
                 <div class="d-table-cell">
                     <div class="container">
                         <div class="page-title-content">
                             <h2>Our Causes</h2>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="/">Home</a></li>
                                 <li>Our Causes</li>
                             </ul>
                         </div>
@@ -431,17 +431,18 @@ componentDidLoad() {
                 </div>
 
                 <div class="row">
+                {this.ngo.projects.slice(0, 8).map(m => (
                     <div class="col-lg-4 col-md-6">
                         <div class="single-causes">
-                            <img src="assets/img/causes/1.jpg" alt="image"/>
+                            <img src={m.photo.url} alt="image"/>
                             <div class="icon">
                                 <i class="flaticon-book-1"></i>
                             </div>
 
                             <div class="causes-content">
                                 <span>#Education</span>
-                                <h3>Education for poor child</h3>
-                                <p>Lorem ipsum dolor sit amet, consecteturad eiustempor incididunlabore</p>
+                                <h3>{m.name}</h3>
+                                <p>{ m.description < 60 ? m.description : m.description.substring(0, 60) + '...' }</p>
 
                                 <div class="causes-progress-bar">
                                     <div class="causes-progress-content">
@@ -460,9 +461,9 @@ componentDidLoad() {
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div>))}
 
-                    <div class="col-lg-4 col-md-6">
+                    {/* <div class="col-lg-4 col-md-6">
                         <div class="single-causes">
                             <img src="assets/img/causes/2.jpg" alt="image"/>
                             <div class="icon">
@@ -615,9 +616,9 @@ componentDidLoad() {
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
-                    <div class="col-lg-12 col-md-12">
+                    {/* <div class="col-lg-12 col-md-12">
                         <div class="pagination-area">
                             <a href="#" class="prev page-numbers">
                                 <i class="flaticon-left"></i>
@@ -630,7 +631,7 @@ componentDidLoad() {
                                 <i class="flaticon-right"></i>
                             </a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
@@ -694,182 +695,182 @@ componentDidLoad() {
         
         <!-- Start Footer Area --> */}
         <footer class="footer-section pt-100">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                  <h3>Contact info</h3>
+
+                  <div class="footer-info-contact">
+                    <i class="flaticon-pin"></i>
+                    <h3>Location</h3>
+                    <span>{this.ngo.address}</span>
+                  </div>
+
+                  <div class="footer-info-contact">
+                    <i class="flaticon-call"></i>
+                    <h3>Call Us</h3>
+                    <span><a href="tel:+882-569-756">{this.ngo.reachOut.phone1}</a></span>
+                  </div>
+
+                  <div class="footer-info-contact">
+                    <i class="flaticon-email"></i>
+                    <h3>Email Us</h3>
+                    <span>
+                      <a href="mailto:hello@huruma.com">
+                        {this.ngo.reachOut.email}
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                  <h3>Our Support</h3>
+
+                  <ul class="footer-quick-links">
+                    <li>
+                      <a href="#">
+                        Private Policies
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/donate">
+                        Donate Now
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/volunteer">
+                        Become a Volunteer
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Careers
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/contact">
+                        Contact Us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Paid programs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Partnership
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                  <h3>Our Services</h3>
+
+                  <ul class="footer-quick-links">
+                    <li>
+                      <a href="/donate">
+                        Donate
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Sponsor
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Fundraise
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Volunteer
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Partner
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Jobs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Form
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                  <h3>Recent News</h3>
+
+                  <div class="footer-news">
+                    <a href="single-blog.html">
+                      <img src="assets/img/footer-news/1.jpg"alt="image" />
+                      <h4>{this.ngo.media[0].name}</h4>
+                      <span>{this.ngo.media[0].PublicationName}</span>
+                    </a>
+                  </div>
+
+                  <div class="footer-news">
+                    <a href="single-blog.html">
+                      <img src="assets/img/footer-news/2.jpg" alt="image" />
+                      <h4>{this.ngo.media[1].name}</h4>
+                      <span>{this.ngo.media[1].PublicationName}</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="copyright-area">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-footer-widget">
-                            <h3>Contact info</h3>
-
-                            <div class="footer-info-contact">
-                                <i class="flaticon-pin"></i>
-                                <h3>Location</h3>
-                                <span>205 Fida Walinton, Tongo<br/> New York, Canada</span>
-                            </div>
-
-                            <div class="footer-info-contact">
-                                <i class="flaticon-call"></i>
-                                <h3>Call Us</h3>
-                                <span><a href="tel:+882-569-756">987-0986-0987</a></span>
-                            </div>
-
-                            <div class="footer-info-contact">
-                                <i class="flaticon-email"></i>
-                                <h3>Email Us</h3>
-                                <span>
-                                    <a href="mailto:hello@huruma.com">
-                                        support@huruma.com
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
+              <div class="copyright-area-content">
+                <div class="row align-items-center">
+                  <div class="col-lg-4">
+                    <div class="copyright-logo">
+                      <img src={this.ngo.logo.url} alt="image" />
                     </div>
+                  </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-footer-widget">
-                            <h3>Our Support</h3>
+                  <div class="col-lg-4 col-md-6">
+                    <p>
+                      <i class="far fa-copyright"></i>
+                      2020 {this.ngo.name }. All Rights Reserved by
+                      <a href="https://envytheme.com/" target="_blank">
+                        EnvyTheme
+                      </a>
+                    </p>
+                  </div>
 
-                            <ul class="footer-quick-links">
-                                <li>
-                                    <a href="#">
-                                        Private Policies
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Donate Now
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Become a Volunteer
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Careers
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Contact Us
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Paid programs
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Partnership
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="single-footer-widget">
-                            <h3>Our Services</h3>
-
-                            <ul class="footer-quick-links">
-                                <li>
-                                    <a href="#">
-                                        Donate
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Sponsor
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Fundraise
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Volunteer
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Partner
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Jobs
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Form 
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-footer-widget">
-                            <h3>Recent News</h3>
-
-                            <div class="footer-news">
-                               <a href="single-blog.html">
-                                    <img src="assets/img/footer-news/1.jpg" alt="image"/>
-                                    <h4>Support about poverty to poor family</h4>
-                                    <span>Poor, 22 January</span>
-                               </a>
-                            </div>
-
-                            <div class="footer-news">
-                               <a href="single-blog.html">
-                                    <img src="assets/img/footer-news/2.jpg" alt="image"/>
-                                    <h4>Mostly suffered school Boys care</h4>
-                                    <span>Health, 24 February</span>
-                               </a>
-                            </div>
-                        </div>
-                    </div>
+                  <div class="col-lg-4 col-md-6">
+                    <ul>
+                      <li>
+                        <a href="terms-condition.html">Terms & Conditions</a>
+                      </li>
+                      <li>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
-
-            <div class="copyright-area">
-                <div class="container">
-                    <div class="copyright-area-content">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4">
-                                <div class="copyright-logo">
-                                    <img src="assets/img/white-logo.png" alt="image"/>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <p>
-                                    <i class="far fa-copyright"></i> 
-                                    2020 Huruma. All Rights Reserved by
-                                    <a href="https://envytheme.com/" target="_blank">
-                                        EnvyTheme
-                                    </a>
-                                </p>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <ul>
-                                    <li>
-                                        <a href="terms-condition.html">Terms & Conditions</a>
-                                    </li>
-                                    <li>
-                                        <a href="privacy-policy.html">Privacy Policy</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </footer>
         {/* <!-- End Footer Area -->
 
