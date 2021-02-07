@@ -352,6 +352,14 @@ Preloader Area CSS
 /*================================================
 Header Area CSS
 =================================================*/
+.logo img{
+  width: 100px;
+  height: 80px;
+}
+.navbar-brand img{
+  width: 230px;
+  height: 140px;
+}
 .header-section {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -7813,6 +7821,10 @@ Privacy Section CSS
 /*================================================
 Footer Area CSS
 =================================================*/
+.footer-news img{
+  width: 80px;
+  height: 68px;
+}
 .footer-section {
   background-color: #302c51;
 }

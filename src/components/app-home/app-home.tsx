@@ -826,7 +826,7 @@ componentDidLoad() {
               </div>
             </div>
             <a href="/causes" class="causes-btn-one">
-                      <h4>See More<i class="flaticon-right"></i></h4>
+                      <h4>See More <i class="flaticon-right"></i></h4>
                       {/* <i class="flaticon-right"></i> */}
                     </a>
           </div>
@@ -1585,7 +1585,7 @@ componentDidLoad() {
         {/*
         <!-- Start Footer Area --> */}
         
-        <footer class="footer-section pt-100">
+        {/* <footer class="footer-section pt-100">
           <div class="container">
             <div class="row">
               <div class="col-lg-3 col-md-6 col-sm-6">
@@ -1713,7 +1713,7 @@ componentDidLoad() {
                       <img src={this.ngo.media[0].photo.url}alt="image" />
                       <span>{this.ngo.media[0].publicationName}</span>
                       <h4>{this.ngo.media[0].name}</h4>
-                      {/* <h5> {this.ngo.media[0].PublicationName}</h5> */}
+                      
                       
                     </a>
                   </div>
@@ -1772,7 +1772,7 @@ componentDidLoad() {
               </div>
             </div>
           </div>
-        </footer>
+        </footer> */}
         {/*
         <!-- End Footer Area --> */}
 
@@ -1782,7 +1782,7 @@ componentDidLoad() {
           <i class="bx bx-chevron-up"></i>
           <i class="bx bx-chevron-up"></i>
         </div>
-        {/* <ngo-footer></ngo-footer> */}
+        <ngo-footer></ngo-footer>
         {/*
         <!-- End Go Top Section --> */}
         </ion-content>

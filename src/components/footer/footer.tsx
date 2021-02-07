@@ -3,6 +3,7 @@ import * as ngo                 from     '../../assets/thozhan.json';
 @Component({
   tag: 'ngo-footer',
   styleUrl: 'footer.css',
+
 })
 export class NgoFooter {
  @Prop() ngo                 :   any                 =   ngo;
@@ -18,7 +19,7 @@ componentDidLoad() {
   render() {
 
     return [
-      <ion-content>
+      <span>
         <footer class="footer-section pt-100">
           <div class="container">
             <div class="row">
@@ -144,19 +145,29 @@ componentDidLoad() {
 
                   <div class="footer-news">
                     <a href="single-blog.html">
-                      <img src="assets/img/footer-news/1.jpg"alt="image" />
+                      <img src={this.ngo.media[0].photo.url}alt="image" />
+                      <span>{this.ngo.media[0].publicationName}</span>
                       <h4>{this.ngo.media[0].name}</h4>
-                      <span>{this.ngo.media[0].PublicationName}</span>
+                      
+                      
                     </a>
                   </div>
 
                   <div class="footer-news">
                     <a href="single-blog.html">
-                      <img src="assets/img/footer-news/2.jpg" alt="image" />
+                      <img src={this.ngo.media[1].photo.url} alt="image" />
+                      <span>{this.ngo.media[1].publicationName}</span>
                       <h4>{this.ngo.media[1].name}</h4>
-                      <span>{this.ngo.media[1].PublicationName}</span>
                     </a>
+                    <br/>
+                    <h4 class ="footer-info-contact">
+                    <a href="/media">
+                     See More
+                    </a>
+                    </h4>
+                    
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -197,7 +208,7 @@ componentDidLoad() {
             </div>
           </div>
         </footer>
-      </ion-content>
+      </span>
   
     ];
   }

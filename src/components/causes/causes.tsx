@@ -694,7 +694,7 @@ componentDidLoad() {
         {/* <!-- End Instagram Area -->
         
         <!-- Start Footer Area --> */}
-        <footer class="footer-section pt-100">
+        {/* <footer class="footer-section pt-100">
           <div class="container">
             <div class="row">
               <div class="col-lg-3 col-md-6 col-sm-6">
@@ -871,10 +871,11 @@ componentDidLoad() {
               </div>
             </div>
           </div>
-        </footer>
+        </footer> */}
         {/* <!-- End Footer Area -->
 
         <!-- Start Go Top Section --> */}
+        <ngo-footer></ngo-footer>
         <div class="go-top">
             <i class="bx bx-chevron-up"></i>
             <i class="bx bx-chevron-up"></i>
