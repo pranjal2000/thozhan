@@ -27,7 +27,8 @@ componentDidLoad() {
         {/*  -- End Header Area - */}
 
         {/*  -- Start Navbar Area - */}
-        <div class="navbar-area  navbar-style-three">
+        <ngo-header></ngo-header>
+        {/* <div class="navbar-area  navbar-style-three">
             <div class="huruma-responsive-nav">
                 <div class="container">
                     <div class="huruma-responsive-menu">
@@ -290,9 +291,7 @@ componentDidLoad() {
                 </div>
             </div>
         </div>
-        {/*  -- End Navbar Area - */}
-
-        {/*  -- Sidebar Modal - */}
+        
         <div class="sidebar-modal">
           <div class="sidebar-modal-inner">
             <div class="sidebar-about-area">
@@ -396,7 +395,7 @@ componentDidLoad() {
               <i class="flaticon-close"></i>
             </span>
           </div>
-        </div>
+        </div> */}
         {/*  -- End Sidebar Modal - */}
         
         {/*  -- Start Page Title Area - */}

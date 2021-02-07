@@ -15,6 +15,7 @@ export class AppRoot {
           <ion-route url="/contact" component="ngo-contact" />
           <ion-route url="/causes" component="ngo-causes" />
           <ion-route url="/team" component="ngo-team" />
+          {/* <ion-route url="/team" component="ngo-team" /> */}
         </ion-router>
         <ion-nav />
       </ion-app>

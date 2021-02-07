@@ -26,6 +26,9 @@ export namespace Components {
     interface NgoFooter {
         "ngo": any;
     }
+    interface NgoHeader {
+        "ngo": any;
+    }
     interface NgoTeam {
         "ngo": any;
     }
@@ -73,6 +76,12 @@ declare global {
         prototype: HTMLNgoFooterElement;
         new (): HTMLNgoFooterElement;
     };
+    interface HTMLNgoHeaderElement extends Components.NgoHeader, HTMLStencilElement {
+    }
+    var HTMLNgoHeaderElement: {
+        prototype: HTMLNgoHeaderElement;
+        new (): HTMLNgoHeaderElement;
+    };
     interface HTMLNgoTeamElement extends Components.NgoTeam, HTMLStencilElement {
     }
     var HTMLNgoTeamElement: {
@@ -87,6 +96,7 @@ declare global {
         "ngo-causes": HTMLNgoCausesElement;
         "ngo-contact": HTMLNgoContactElement;
         "ngo-footer": HTMLNgoFooterElement;
+        "ngo-header": HTMLNgoHeaderElement;
         "ngo-team": HTMLNgoTeamElement;
     }
 }
@@ -111,6 +121,9 @@ declare namespace LocalJSX {
     interface NgoFooter {
         "ngo"?: any;
     }
+    interface NgoHeader {
+        "ngo"?: any;
+    }
     interface NgoTeam {
         "ngo"?: any;
     }
@@ -122,6 +135,7 @@ declare namespace LocalJSX {
         "ngo-causes": NgoCauses;
         "ngo-contact": NgoContact;
         "ngo-footer": NgoFooter;
+        "ngo-header": NgoHeader;
         "ngo-team": NgoTeam;
     }
 }
@@ -136,6 +150,7 @@ declare module "@stencil/core" {
             "ngo-causes": LocalJSX.NgoCauses & JSXBase.HTMLAttributes<HTMLNgoCausesElement>;
             "ngo-contact": LocalJSX.NgoContact & JSXBase.HTMLAttributes<HTMLNgoContactElement>;
             "ngo-footer": LocalJSX.NgoFooter & JSXBase.HTMLAttributes<HTMLNgoFooterElement>;
+            "ngo-header": LocalJSX.NgoHeader & JSXBase.HTMLAttributes<HTMLNgoHeaderElement>;
             "ngo-team": LocalJSX.NgoTeam & JSXBase.HTMLAttributes<HTMLNgoTeamElement>;
         }
     }

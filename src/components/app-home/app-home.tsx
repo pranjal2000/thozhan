@@ -132,7 +132,26 @@ componentDidLoad() {
                                     <a href="/about" class="nav-link">
                                         {/* <span>o2</span> */}
                                         About
+                                        <i class='bx bx-chevron-down'></i>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="/media" class="nav-link">
+                                                Press Coverage
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/team" class="nav-link">
+                                                Team
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="/legal" class="nav-link">
+                                                Legal
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <li class="nav-item">
