@@ -157,33 +157,34 @@ componentDidLoad() {
                                 <li class="nav-item">
                                     <a href="/causes" class="nav-link">
                                         {/* <span>o3</span> */}
-                                        Causes
+                                        Projects
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
                                     
                                     <ul class="dropdown-menu">
+                                    {this.ngo.projects.slice(0, 8).map(p => (
                                         <li class="nav-item">
-                                            <a href="/causes" class="nav-link">
-                                                Causes
+                                            <a class="nav-link">
+                                            <ion-router-link color={location.pathname.startsWith('/projects/' + p.slug) ? 'primary' : 'medium' } href={`/projects/${p.slug}`} > { p.name } </ion-router-link> 
                                             </a>
-                                        </li>
+                                        </li>))}
 
-                                        <li class="nav-item">
+                                        {/* <li class="nav-item">
                                             <a href="single-causes.html" class="nav-link">
                                                 Single Causes
                                             </a>
-                                        </li>
+                                        </li> */}
                                     </ul>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="/donate" class="nav-link">
                                         {/* <span>o4</span> */}
-                                        Pages 
-                                        <i class='bx bx-chevron-down'></i>
+                                        Donate 
+                                        {/* <i class='bx bx-chevron-down'></i> */}
                                     </a>
 
-                                    <ul class="dropdown-menu">
+                                    {/* <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <a href="/about" class="nav-link">
                                                 About
@@ -267,16 +268,16 @@ componentDidLoad() {
                                                 Contact
                                             </a>
                                         </li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="/media" class="nav-link">
+                                    <a href="/volunteer" class="nav-link">
                                         {/* <span>o5</span> */}
-                                        Blog 
-                                        <i class='bx bx-chevron-down'></i>
+                                        Volunteer
+                                        {/* <i class='bx bx-chevron-down'></i> */}
                                     </a>
-                                    <ul class="dropdown-menu">
+                                    {/* <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <a href="blog-1.html" class="nav-link">
                                                 Blog Grid
@@ -294,7 +295,7 @@ componentDidLoad() {
                                                 Blog Details
                                             </a>
                                         </li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
 
                                 <li class="nav-item">

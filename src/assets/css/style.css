@@ -7821,6 +7821,11 @@ Privacy Section CSS
 /*================================================
 Footer Area CSS
 =================================================*/
+.single-blog img{
+  height: 250px;
+  width: 100%;
+  /* object-fit: fill; */
+}
 .footer-news img{
   width: 80px;
   height: 68px;

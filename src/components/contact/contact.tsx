@@ -5,7 +5,7 @@ import * as ngo                 from    '../../assets/thozhan.json';
     tag                         :   'ngo-contact',
     styleUrl                    :   'contact.css',
 })
-export class NgoCauses{
+export class NgoContact{
 
     @Prop() ngo                 :   any                 =   ngo;
 

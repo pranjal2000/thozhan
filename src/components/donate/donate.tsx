@@ -1,26 +1,39 @@
-import { Component, h, Prop} from '@stencil/core';
-import * as ngo                 from     '../../assets/thozhan.json';
+import { Component, h, Prop }   from    '@stencil/core';
+import * as ngo                 from    '../../assets/thozhan.json';
+
 @Component({
-  tag: 'ngo-header',
-  styleUrl: 'header.css',
-
+    tag                         :   'ngo-donate',
+    styleUrl                    :   'donate.css',
 })
-export class NgoHeader {
- @Prop() ngo                 :   any                 =   ngo;
- componentWillLoad() {
-  console.log('NgoHeader :: componentWillLoad');
-}
+export class NgoDonate{
 
-componentDidLoad() {
-  console.log('NgoHeader :: componentDidLoad');
-}
+    @Prop() ngo                 :   any                 =   ngo;
 
-  
-  render() {
+    constructor () {
+        console.log('Donate :: Constructor');
+    }
 
-    return [
-      <span>
-        <div class="navbar-area  navbar-style-three">
+    async componentWillLoad() {
+        console.log('Donate :: Component will load');
+    }
+
+    async componentDidLoad() {
+        console.log('Donate :: Component did load');
+    }
+
+
+    render() {
+      var img = 'url(' + "https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" + ')';
+        return (
+        <ion-content>
+          <div class="preloader">
+            <div class="preloader">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ngo-header></ngo-header>
+          {/* <div class="navbar-area  navbar-style-three">
             <div class="huruma-responsive-nav">
                 <div class="container">
                     <div class="huruma-responsive-menu">
@@ -37,7 +50,7 @@ componentDidLoad() {
             <div class="huruma-nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="/">
+                        <a class="navbar-brand" href="index.html">
                             <img src="assets/img/logo-3.png" class="white-logo" alt="logo"/>
                             <img src="assets/img/logo-2.png" class="black-logo" alt="image"/>
                         </a>
@@ -47,9 +60,9 @@ componentDidLoad() {
                                 <li class="nav-item">
                                     <a href="/" class="nav-link">
                                         Home 
-                                        {/* <i class='bx bx-chevron-down'></i> */}
+                                        <i class='bx bx-chevron-down'></i>
                                     </a>
-                                    {/* <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <a href="/" class="nav-link">
                                                 Home One
@@ -73,56 +86,42 @@ componentDidLoad() {
                                                 Home Four
                                             </a>
                                         </li>
-                                    </ul> */}
+                                    </ul>
                                 </li>
 
                                 <li class="nav-item">
                                     <a href="/about" class="nav-link">
                                         About
-                                        <i class='bx bx-chevron-down'></i>
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="/media" class="nav-link">
-                                                Press Coverage
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="/team" class="nav-link">
-                                                Team
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="/legal" class="nav-link">
-                                                Legal
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </li>
 
                                 <li class="nav-item">
                                     <a href="/causes" class="nav-link">
-                                        Projects 
+                                        Causes 
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
                                     <ul class="dropdown-menu">
-                                    {this.ngo.projects.slice(0, 8).map(p => (
                                         <li class="nav-item">
-                                            <a class="nav-link">
-                                            <ion-router-link color={location.pathname.startsWith('/projects/' + p.slug) ? 'active' : 'medium' } href={`/projects/${p.slug}`} > { p.name } </ion-router-link> 
+                                            <a href="/causes" class="nav-link">
+                                                Causes
                                             </a>
-                                        </li>))}
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="single-causes.html" class="nav-link">
+                                                Single Causes
+                                            </a>
+                                        </li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="/donate" class="nav-link">
-                                        Donate 
-                                        {/* <i class='bx bx-chevron-down'></i> */}
+                                    <a href="#" class="nav-link">
+                                        Pages 
+                                        <i class='bx bx-chevron-down'></i>
                                     </a>
 
-                                    {/* <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <a href="/about" class="nav-link">
                                                 About
@@ -202,19 +201,19 @@ componentDidLoad() {
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="/contact" class="nav-link">
+                                            <a href="/contact" class="nav-link active">
                                                 Contact
                                             </a>
                                         </li>
-                                    </ul> */}
+                                    </ul>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="/volunteer" class="nav-link">
-                                        Volunteer 
-                                        {/* <i class='bx bx-chevron-down'></i> */}
+                                    <a href="/causes" class="nav-link">
+                                        Blog 
+                                        <i class='bx bx-chevron-down'></i>
                                     </a>
-                                    {/* <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <a href="blog-1.html" class="nav-link">
                                                 Blog Grid
@@ -232,12 +231,12 @@ componentDidLoad() {
                                                 Blog Details
                                             </a>
                                         </li>
-                                    </ul> */}
+                                    </ul>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="/contact" class="nav-link">
-                                    Contact
+                                    <a href="/contact" class="nav-link active">
+                                        Contact
                                     </a>
                                 </li>
                             </ul>
@@ -300,7 +299,7 @@ componentDidLoad() {
         {/*  -- End Navbar Area - */}
 
         {/*  -- Sidebar Modal - */}
-        <div class="sidebar-modal">
+        {/* <div class="sidebar-modal">
           <div class="sidebar-modal-inner">
             <div class="sidebar-about-area">
               <div class="title">
@@ -403,9 +402,332 @@ componentDidLoad() {
               <i class="flaticon-close"></i>
             </span>
           </div>
-        </div>
-      </span>
-  
-    ];
-  }
+        </div> */}
+           
+          <div class="page-title-area" style={{'background-image': img}}>
+            <div class="d-table">
+              <div class="d-table-cell">
+                <div class="container">
+                  <div class="page-title-content">
+                    <h2>Donate</h2>
+                    <ul>
+                      <li><a href="/">Home</a></li>
+                      <li>Donate</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="contact-section ptb-100">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="contact-info-address">
+                    <h3>Why Help?</h3>
+
+                    <div class="contact-content">
+                    <h3>GIVING PROMOTES FEELINGS OF HAPPINESS</h3>
+                      <p>Helping others feels good. When you donate to a charity that is important to you, you not only help them continue their vital work, you’re also improving your emotional wellbeing, a win-win situation!</p>
+                    <h3> YOU CAN REAP SOCIAL, PHYSICAL, MENTAL, AND SPIRITUAL BENEFITS</h3>
+                    <p>By giving your time to a charity, you get the opportunity to build your social circles by working with like-minded people</p>
+                    </div>
+
+                    {/* <div class="info-contact">
+                      <i class="flaticon-call"></i>
+                      <h3>Call Us</h3>
+                      <span><a href="#">{this.ngo.reachOut.phone1}</a></span>
+                    </div>
+
+                    <div class="info-contact">
+                      <i class="flaticon-email"></i>
+                      <h3>Email Us</h3>
+                      <span>
+                        <a href="#">
+                          {this.ngo.reachOut.email}
+                        </a>
+                      </span>
+                    </div> */}
+                  </div>
+                </div>
+                
+
+                <div class="col-lg-8">
+                
+                  <div class="contact-area">
+                    <div class="contact-content">
+                      <h3>Donate Here!</h3>
+                      <p>Having the power to improve the lives of others is, to many people, a privilege, and one that comes with its own sense of obligation.</p>
+                    </div>
+                    
+                    
+
+                    <div class="contact-form">
+                      <form id="contactForm">
+                        <div class="row">
+                        <div class = "col-lg-12">
+                    <div class="send-btn">
+                              <button type="submit" class="default-btn">
+                                Login with Grassroots
+
+                                <i class="flaticon-right"></i>
+                                <span> </span>
+                              </button>
+                            </div>
+                    </div>
+                          <div class="col-lg-12 col-md-12">
+                              <br/>
+                            <div class="form-group">
+                            <select class='form-control' >
+                                 <option> General Donation </option>
+                            </select>
+
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                              <input type="number" name="amount" id="amount" required
+                                data-error="Please enter your amount" class="form-control" min="100" placeholder="Amount" />
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                              <input type="text" name="refered_by" id="refered_by" class="form-control" placeholder="Refered by" />
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                              <input type="checkbox" style={{ 'width': '18px', 'height': '18px' }}id="anonymous" name="anonymous" value="yes" />
+                              <span style={{ 'padding-left': '16px' }} > Make Anonymous </span>
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                              <textarea name="message" class="form-control" id="message" cols={30} rows={6} required
+                                data-error="Write your cause" placeholder="Why am I donating?"></textarea>
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-12">
+                            <div class="send-btn">
+                              <button type="submit" class="default-btn">
+                                Donate
+                                <i class="flaticon-right"></i>
+                                <span></span>
+                              </button>
+                            </div>
+                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                            <div class="clearfix"></div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <ngo-footer></ngo-footer>
+
+          {/* <footer class="footer-section pt-100">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                  <h3>Contact info</h3>
+
+                  <div class="footer-info-contact">
+                    <i class="flaticon-pin"></i>
+                    <h3>Location</h3>
+                    <span>{this.ngo.address}</span>
+                  </div>
+
+                  <div class="footer-info-contact">
+                    <i class="flaticon-call"></i>
+                    <h3>Call Us</h3>
+                    <span><a href="tel:+882-569-756">{this.ngo.reachOut.phone1}</a></span>
+                  </div>
+
+                  <div class="footer-info-contact">
+                    <i class="flaticon-email"></i>
+                    <h3>Email Us</h3>
+                    <span>
+                      <a href="mailto:hello@huruma.com">
+                        {this.ngo.reachOut.email}
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                  <h3>Our Support</h3>
+
+                  <ul class="footer-quick-links">
+                    <li>
+                      <a href="#">
+                        Private Policies
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/donate">
+                        Donate Now
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/volunteer">
+                        Become a Volunteer
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Careers
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/contact">
+                        Contact Us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Paid programs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Partnership
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                  <h3>Our Services</h3>
+
+                  <ul class="footer-quick-links">
+                    <li>
+                      <a href="/donate">
+                        Donate
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Sponsor
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Fundraise
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Volunteer
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Partner
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Jobs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Form
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                  <h3>Recent News</h3>
+
+                  <div class="footer-news">
+                    <a href="single-blog.html">
+                      <img src="assets/img/footer-news/1.jpg"alt="image" />
+                      <h4>{this.ngo.media[0].name}</h4>
+                      <span>{this.ngo.media[0].PublicationName}</span>
+                    </a>
+                  </div>
+
+                  <div class="footer-news">
+                    <a href="single-blog.html">
+                      <img src="assets/img/footer-news/2.jpg" alt="image" />
+                      <h4>{this.ngo.media[1].name}</h4>
+                      <span>{this.ngo.media[1].PublicationName}</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="copyright-area">
+            <div class="container">
+              <div class="copyright-area-content">
+                <div class="row align-items-center">
+                  <div class="col-lg-4">
+                    <div class="copyright-logo">
+                      <img src={this.ngo.logo.url} alt="image" />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                    <p>
+                      <i class="far fa-copyright"></i>
+                      2020 {this.ngo.name }. All Rights Reserved by
+                      <a href="https://envytheme.com/" target="_blank">
+                        EnvyTheme
+                      </a>
+                    </p>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                    <ul>
+                      <li>
+                        <a href="terms-condition.html">Terms & Conditions</a>
+                      </li>
+                      <li>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer> */}
+
+          <div class="go-top">
+            <i class="bx bx-chevron-up"></i>
+            <i class="bx bx-chevron-up"></i>
+          </div>
+
+        </ion-content>
+
+);
+
+    }
+
 }
