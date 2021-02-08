@@ -155,7 +155,7 @@ componentDidLoad() {
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="/causes" class="nav-link">
+                                    <a href="/projects" class="nav-link">
                                         {/* <span>o3</span> */}
                                         Projects
                                         <i class='bx bx-chevron-down'></i>
@@ -164,8 +164,12 @@ componentDidLoad() {
                                     <ul class="dropdown-menu">
                                     {this.ngo.projects.slice(0, 8).map(p => (
                                         <li class="nav-item">
+                                            {/* <a class="nav-link" href={`/projects/${p.slug}`}>
+                                            { p.name }
+                     
+                                            </a> */}
                                             <a class="nav-link">
-                                            <ion-router-link color={location.pathname.startsWith('/projects/' + p.slug) ? 'primary' : 'medium' } href={`/projects/${p.slug}`} > { p.name } </ion-router-link> 
+                                            <ion-router-link href={`/projects/${p.slug}`} > {p.name} </ion-router-link>
                                             </a>
                                         </li>))}
 
@@ -845,7 +849,7 @@ componentDidLoad() {
                 </div>
               </div>
             </div>
-            <a href="/causes" class="causes-btn-one">
+            <a href="/projects" class="causes-btn-one">
                       <h4>See More <i class="flaticon-right"></i></h4>
                       {/* <i class="flaticon-right"></i> */}
                     </a>

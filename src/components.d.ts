@@ -17,9 +17,6 @@ export namespace Components {
     interface NgoAbout {
         "ngo": any;
     }
-    interface NgoCauses {
-        "ngo": any;
-    }
     interface NgoContact {
         "ngo": any;
     }
@@ -35,8 +32,12 @@ export namespace Components {
     interface NgoMedia {
         "ngo": any;
     }
-    interface NgoProjectsDetail {
+    interface NgoProjects {
         "ngo": any;
+    }
+    interface NgoProjectsDetail {
+        "project": any;
+        "projectSlug": string;
     }
     interface NgoTeam {
         "ngo": any;
@@ -70,12 +71,6 @@ declare global {
         prototype: HTMLNgoAboutElement;
         new (): HTMLNgoAboutElement;
     };
-    interface HTMLNgoCausesElement extends Components.NgoCauses, HTMLStencilElement {
-    }
-    var HTMLNgoCausesElement: {
-        prototype: HTMLNgoCausesElement;
-        new (): HTMLNgoCausesElement;
-    };
     interface HTMLNgoContactElement extends Components.NgoContact, HTMLStencilElement {
     }
     var HTMLNgoContactElement: {
@@ -106,6 +101,12 @@ declare global {
         prototype: HTMLNgoMediaElement;
         new (): HTMLNgoMediaElement;
     };
+    interface HTMLNgoProjectsElement extends Components.NgoProjects, HTMLStencilElement {
+    }
+    var HTMLNgoProjectsElement: {
+        prototype: HTMLNgoProjectsElement;
+        new (): HTMLNgoProjectsElement;
+    };
     interface HTMLNgoProjectsDetailElement extends Components.NgoProjectsDetail, HTMLStencilElement {
     }
     var HTMLNgoProjectsDetailElement: {
@@ -129,12 +130,12 @@ declare global {
         "app-profile": HTMLAppProfileElement;
         "app-root": HTMLAppRootElement;
         "ngo-about": HTMLNgoAboutElement;
-        "ngo-causes": HTMLNgoCausesElement;
         "ngo-contact": HTMLNgoContactElement;
         "ngo-donate": HTMLNgoDonateElement;
         "ngo-footer": HTMLNgoFooterElement;
         "ngo-header": HTMLNgoHeaderElement;
         "ngo-media": HTMLNgoMediaElement;
+        "ngo-projects": HTMLNgoProjectsElement;
         "ngo-projects-detail": HTMLNgoProjectsDetailElement;
         "ngo-team": HTMLNgoTeamElement;
         "ngo-volunteer": HTMLNgoVolunteerElement;
@@ -152,9 +153,6 @@ declare namespace LocalJSX {
     interface NgoAbout {
         "ngo"?: any;
     }
-    interface NgoCauses {
-        "ngo"?: any;
-    }
     interface NgoContact {
         "ngo"?: any;
     }
@@ -170,8 +168,12 @@ declare namespace LocalJSX {
     interface NgoMedia {
         "ngo"?: any;
     }
-    interface NgoProjectsDetail {
+    interface NgoProjects {
         "ngo"?: any;
+    }
+    interface NgoProjectsDetail {
+        "project"?: any;
+        "projectSlug"?: string;
     }
     interface NgoTeam {
         "ngo"?: any;
@@ -184,12 +186,12 @@ declare namespace LocalJSX {
         "app-profile": AppProfile;
         "app-root": AppRoot;
         "ngo-about": NgoAbout;
-        "ngo-causes": NgoCauses;
         "ngo-contact": NgoContact;
         "ngo-donate": NgoDonate;
         "ngo-footer": NgoFooter;
         "ngo-header": NgoHeader;
         "ngo-media": NgoMedia;
+        "ngo-projects": NgoProjects;
         "ngo-projects-detail": NgoProjectsDetail;
         "ngo-team": NgoTeam;
         "ngo-volunteer": NgoVolunteer;
@@ -203,12 +205,12 @@ declare module "@stencil/core" {
             "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
             "ngo-about": LocalJSX.NgoAbout & JSXBase.HTMLAttributes<HTMLNgoAboutElement>;
-            "ngo-causes": LocalJSX.NgoCauses & JSXBase.HTMLAttributes<HTMLNgoCausesElement>;
             "ngo-contact": LocalJSX.NgoContact & JSXBase.HTMLAttributes<HTMLNgoContactElement>;
             "ngo-donate": LocalJSX.NgoDonate & JSXBase.HTMLAttributes<HTMLNgoDonateElement>;
             "ngo-footer": LocalJSX.NgoFooter & JSXBase.HTMLAttributes<HTMLNgoFooterElement>;
             "ngo-header": LocalJSX.NgoHeader & JSXBase.HTMLAttributes<HTMLNgoHeaderElement>;
             "ngo-media": LocalJSX.NgoMedia & JSXBase.HTMLAttributes<HTMLNgoMediaElement>;
+            "ngo-projects": LocalJSX.NgoProjects & JSXBase.HTMLAttributes<HTMLNgoProjectsElement>;
             "ngo-projects-detail": LocalJSX.NgoProjectsDetail & JSXBase.HTMLAttributes<HTMLNgoProjectsDetailElement>;
             "ngo-team": LocalJSX.NgoTeam & JSXBase.HTMLAttributes<HTMLNgoTeamElement>;
             "ngo-volunteer": LocalJSX.NgoVolunteer & JSXBase.HTMLAttributes<HTMLNgoVolunteerElement>;

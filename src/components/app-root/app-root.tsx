@@ -13,7 +13,7 @@ export class AppRoot {
           <ion-route url="/profile/:name" component="app-profile" />
           <ion-route url="/about" component="ngo-about" />
           <ion-route url="/contact" component="ngo-contact" />
-          <ion-route url="/causes" component="ngo-causes" />
+          <ion-route url="/projects" component="ngo-projects" />
           <ion-route url="/team" component="ngo-team" />
           <ion-route url="/media" component="ngo-media" />
           <ion-route url="/donate" component="ngo-donate" />

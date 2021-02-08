@@ -1,38 +1,39 @@
 import { Component, h, Prop} from '@stencil/core';
-// import * as ngo                 from     '../../../assets/thozhan.json';
+// import * as ngo                 from     '../../assets/thozhan.json';
 @Component({
   tag: 'ngo-projects-detail',
   styleUrl: 'detail.css',
 
 })
-export class ProjectDetail {
- @Prop() ngo                 :   any                 =   {};
+export class NgoProjectsDetail {
+ @Prop() project                 :   any                 =   {};
+ @Prop() projectSlug : string;
  componentWillLoad() {
-  console.log('ProjectDetail :: componentWillLoad');
+  console.log('NgoProjectsDetail :: componentWillLoad');
 }
 
 componentDidLoad() {
-  console.log('ProjectDetail :: componentDidLoad');
+  console.log('NgoProjectsDetail :: componentDidLoad');
 }
 
   
   render() {
 
     return [
-      <ion-content>
-        <div class="preloader">
-            <div class="preloader">
-                <span></span>
-                <span></span>
-            </div>
+		<ion-contect>
+		<div class="preloader">
+          <div class="preloader">
+            <span></span>
+            <span></span>
+          </div>
         </div>
-        <ngo-header></ngo-header>
-        <div class="page-title-area">
+			<ngo-header></ngo-header>
+			<div class="page-title-area">
             <div class="d-table">
                 <div class="d-table-cell">
                     <div class="container">
                         <div class="page-title-content">
-                            <h2>Project Details</h2>
+                            <h2>{this.project.name}</h2>
                             <ul>
                                 <li><a href="/">Home</a></li>
                                 <li>Project Details</li>
@@ -51,13 +52,13 @@ componentDidLoad() {
                     <div class="col-lg-8 col-md-12">
                         <div class="causes-details-desc">
                             <div class="causes-details-image">
-                                <img src="../assets/img/causes-details/1.jpg" alt="image"/>
+                                <img src={this.project.photo.url} alt="image"/>
                             </div>
 
                             <div class="causes-details-text">
                                 <div class="progress pink">
                                     <div class="progress-bar">
-                                        <div class="progress-value" style={{width:"50%"}}>50%</div>
+                                        <div class="progress-value" style={{"width": "50%;"}}>50%</div>
                                     </div>
                                 </div>
                                 <ul>
@@ -99,19 +100,19 @@ componentDidLoad() {
 									<h3>Select Payment Method</h3>
 									<p>
 										<input type="radio" id="paypal" name="radio-group"/>
-										<label htmlFor="paypal">PayPal</label>
+										<label htmlfor="paypal">PayPal</label>
 									</p>
 									<p>
 										<input type="radio" id="credit" name="radio-group"/>
-										<label htmlFor="credit">Credit Card</label>
+										<label htmlfor="credit">Credit Card</label>
 									</p>
 									<p>
 										<input type="radio" id="debit" name="radio-group"/>
-										<label htmlFor="debit">Debit Card</label>
+										<label htmlfor="debit">Debit Card</label>
 									</p>
 									<p>
 										<input type="radio" id="others" name="radio-group"/>
-										<label htmlFor="others">others</label>
+										<label htmlfor="others">others</label>
 									</p>
                                 </div>
 
@@ -279,10 +280,8 @@ componentDidLoad() {
                 </div>
             </div>
         </section>
-
-        <ngo-footer></ngo-footer>
-
-      </ion-content>
+			<ngo-footer></ngo-footer>
+		</ion-contect>
   
     ];
   }

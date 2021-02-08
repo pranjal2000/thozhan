@@ -49,31 +49,7 @@ componentDidLoad() {
                                         Home 
                                         {/* <i class='bx bx-chevron-down'></i> */}
                                     </a>
-                                    {/* <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="/" class="nav-link">
-                                                Home One
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="/" class="nav-link">
-                                                Home Two
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="/" class="nav-link">
-                                                Home Three
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="/" class="nav-link">
-                                                Home Four
-                                            </a>
-                                        </li>
-                                    </ul> */}
+                                   
                                 </li>
 
                                 <li class="nav-item">
@@ -102,15 +78,16 @@ componentDidLoad() {
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="/causes" class="nav-link">
+                                    <a href="/projects" class="nav-link">
                                         Projects 
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
                                     <ul class="dropdown-menu">
                                     {this.ngo.projects.slice(0, 8).map(p => (
                                         <li class="nav-item">
-                                            <a class="nav-link">
-                                            <ion-router-link color={location.pathname.startsWith('/projects/' + p.slug) ? 'active' : 'medium' } href={`/projects/${p.slug}`} > { p.name } </ion-router-link> 
+                                            <a class="nav-link" href={`/projects/${p.slug}`}>
+                                            { p.name }
+                     
                                             </a>
                                         </li>))}
                                     </ul>
