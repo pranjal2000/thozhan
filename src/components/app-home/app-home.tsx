@@ -160,7 +160,6 @@ componentDidLoad() {
                                         Projects
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
-                                    
                                     <ul class="dropdown-menu">
                                     {this.ngo.projects.slice(0, 8).map(p => (
                                         <li class="nav-item">
@@ -168,12 +167,6 @@ componentDidLoad() {
                                             <ion-router-link href={`/projects/${p.id}`} > {p.name} </ion-router-link>
                                             </a>
                                         </li>))}
-
-                                        {/* <li class="nav-item">
-                                            <a href="single-causes.html" class="nav-link">
-                                                Single Causes
-                                            </a>
-                                        </li> */}
                                     </ul>
                                 </li>
 
@@ -277,25 +270,7 @@ componentDidLoad() {
                                         Volunteer
                                         {/* <i class='bx bx-chevron-down'></i> */}
                                     </a>
-                                    {/* <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="blog-1.html" class="nav-link">
-                                                Blog Grid
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="blog-2.html" class="nav-link">
-                                                Blog Right Sidebar
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="single-blog.html" class="nav-link">
-                                                Blog Details
-                                            </a>
-                                        </li>
-                                    </ul> */}
+                                    
                                 </li>
 
                                 <li class="nav-item">
@@ -1438,7 +1413,13 @@ componentDidLoad() {
                       <h3>{this.ngo.review[2].volunteer.name}</h3>
                       <span>{this.ngo.review[2].ngo.name}<b></b></span>
                       <ul class="social-info">
-                        <li>
+                      {Array.apply(null, { length: this.ngo.review[2].rating }).map((m, i) => (
+                      <li>
+                        <i class='bx bxs-star'></i>
+                      </li>
+                      ))}
+                        
+                        {/* <li>
                           <i class='bx bxs-star'></i>
                         </li>
                         <li>
@@ -1449,10 +1430,7 @@ componentDidLoad() {
                         </li>
                         <li>
                           <i class='bx bxs-star'></i>
-                        </li>
-                        <li>
-                          <i class='bx bxs-star'></i>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   </div>
@@ -1470,21 +1448,12 @@ componentDidLoad() {
                       <h3>{this.ngo.review[1].volunteer.name}</h3>
                       <span>{this.ngo.review[1].ngo.name}<b></b></span>
                       <ul class="social-info">
-                        <li>
-                          <i class='bx bxs-star'></i>
-                        </li>
-                        <li>
-                          <i class='bx bxs-star'></i>
-                        </li>
-                        <li>
-                          <i class='bx bxs-star'></i>
-                        </li>
-                        <li>
-                          <i class='bx bxs-star'></i>
-                        </li>
-                        <li>
-                          <i class='bx bxs-star'></i>
-                        </li>
+                      {Array.apply(null, { length: this.ngo.review[1].rating }).map(() => (
+                      <li>
+                        <i class='bx bxs-star'></i>
+                      </li>
+                      ))}
+                        
                       </ul>
                     </div>
                   </div>

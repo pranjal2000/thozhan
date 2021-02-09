@@ -77,7 +77,7 @@ componentDidLoad() {
                                 <p>{ m.description < 60 ? m.description : m.description.substring(0, 100) + '...' }</p>
                                 
                                 <a href={m.link} class="causes-btn-one">
-                                <ion-router-link color={location.pathname.startsWith('/projects/' + m.slug) ? 'active' : 'medium' } href={`/projects/${m.slug}`} > Visit </ion-router-link>
+                                <ion-router-link  href={`/projects/${m.id}`} > Visit </ion-router-link>
                                     <i class="flaticon-right"></i>
                                 </a>
                             </div>
