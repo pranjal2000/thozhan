@@ -164,12 +164,8 @@ componentDidLoad() {
                                     <ul class="dropdown-menu">
                                     {this.ngo.projects.slice(0, 8).map(p => (
                                         <li class="nav-item">
-                                            {/* <a class="nav-link" href={`/projects/${p.slug}`}>
-                                            { p.name }
-                     
-                                            </a> */}
                                             <a class="nav-link">
-                                            <ion-router-link href={`/projects/${p.slug}`} > {p.name} </ion-router-link>
+                                            <ion-router-link href={`/projects/${p.id}`} > {p.name} </ion-router-link>
                                             </a>
                                         </li>))}
 

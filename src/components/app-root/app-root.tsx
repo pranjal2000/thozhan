@@ -18,7 +18,7 @@ export class AppRoot {
           <ion-route url="/media" component="ngo-media" />
           <ion-route url="/donate" component="ngo-donate" />
           <ion-route url="/volunteer" component="ngo-volunteer" />
-          <ion-route url="/projects/:projectSlug" component="ngo-projects-detail" />
+          <ion-route url="/projects/:projectID" component="ngo-projects-detail" />
         </ion-router>
         <ion-nav />
       </ion-app>

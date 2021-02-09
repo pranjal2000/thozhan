@@ -26,8 +26,8 @@ componentDidLoad() {
                     <div class="huruma-responsive-menu">
                         <div class="logo">
                             <a href="/">
-                                <img src="assets/img/logo-3.png" class="white-logo" alt="logo"/>
-                                <img src="assets/img/logo-2.png" class="black-logo" alt="image"/>
+                                <img src="../assets/img/logo-3.png" class="white-logo" alt="logo"/>
+                                <img src="../assets/img/logo-2.png" class="black-logo" alt="image"/>
                             </a>
                         </div>
                     </div>
@@ -38,8 +38,8 @@ componentDidLoad() {
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="/">
-                            <img src="assets/img/logo-3.png" class="white-logo" alt="logo"/>
-                            <img src="assets/img/logo-2.png" class="black-logo" alt="image"/>
+                            <img src="../assets/img/logo-3.png" class="white-logo" alt="logo"/>
+                            <img src="../assets/img/logo-2.png" class="black-logo" alt="image"/>
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -79,15 +79,14 @@ componentDidLoad() {
 
                                 <li class="nav-item">
                                     <a href="/projects" class="nav-link">
-                                        Projects 
+                                        Projects
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
                                     <ul class="dropdown-menu">
                                     {this.ngo.projects.slice(0, 8).map(p => (
                                         <li class="nav-item">
-                                            <a class="nav-link" href={`/projects/${p.slug}`}>
-                                            { p.name }
-                     
+                                            <a class="nav-link">
+                                            <ion-router-link href={`/projects/${p.id}`} > {p.name} </ion-router-link>
                                             </a>
                                         </li>))}
                                     </ul>
@@ -99,91 +98,7 @@ componentDidLoad() {
                                         {/* <i class='bx bx-chevron-down'></i> */}
                                     </a>
 
-                                    {/* <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="/about" class="nav-link">
-                                                About
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="/team" class="nav-link">
-                                                Team
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="/gallery" class="nav-link">
-                                                Gallery
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                Events 
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="events.html" class="nav-link">
-                                                        Events
-                                                    </a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="single-events.html" class="nav-link">
-                                                        Events Details
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="faq.html" class="nav-link">
-                                                Faq
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="feedback.html" class="nav-link">
-                                                Feedback
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                User 
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="log-in.html" class="nav-link">
-                                                        Log In
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="sign-up.html" class="nav-link">
-                                                        Sign Up
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="recover-password.html" class="nav-link">
-                                                        Recover Password
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
                                     
-                                        <li class="nav-item">
-                                            <a href="error-404.html" class="nav-link">
-                                                404 Error
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="/contact" class="nav-link">
-                                                Contact
-                                            </a>
-                                        </li>
-                                    </ul> */}
                                 </li>
 
                                 <li class="nav-item">
@@ -191,25 +106,7 @@ componentDidLoad() {
                                         Volunteer 
                                         {/* <i class='bx bx-chevron-down'></i> */}
                                     </a>
-                                    {/* <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="blog-1.html" class="nav-link">
-                                                Blog Grid
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="blog-2.html" class="nav-link">
-                                                Blog Right Sidebar
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="single-blog.html" class="nav-link">
-                                                Blog Details
-                                            </a>
-                                        </li>
-                                    </ul> */}
+                                    
                                 </li>
 
                                 <li class="nav-item">
@@ -222,29 +119,29 @@ componentDidLoad() {
                             <div class="others-options">
                                 <div class="dropdown language-switcher d-inline-block">
                                     <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <img src="assets/img/flag/france-flag.jpg" class="shadow" alt="image"/>
+                                        <img src="../assets/img/flag/france-flag.jpg" class="shadow" alt="image"/>
                                         <span>Eng <i class='bx bx-chevron-down'></i></span>
                                     </button>
 
                                     <div class="dropdown-menu">
                                         <a href="#" class="dropdown-item d-flex align-items-center">
-                                            <img src="assets/img/flag/germany-flag.jpg" class="shadow-sm" alt="flag"/>
+                                            <img src="../assets/img/flag/germany-flag.jpg" class="shadow-sm" alt="flag"/>
                                             <span>Ger</span>
                                         </a>
                                         <a href="#" class="dropdown-item d-flex align-items-center">
-                                            <img src="assets/img/flag/italy-flag.jpg" class="shadow-sm" alt="flag"/>
+                                            <img src="../assets/img/flag/italy-flag.jpg" class="shadow-sm" alt="flag"/>
                                             <span>Fre</span>
                                         </a>
                                         <a href="#" class="dropdown-item d-flex align-items-center">
-                                            <img src="assets/img/flag/spain-flag.jpg" class="shadow-sm" alt="flag"/>
+                                            <img src="../assets/img/flag/spain-flag.jpg" class="shadow-sm" alt="flag"/>
                                             <span>Spa</span>
                                         </a>
                                         <a href="#" class="dropdown-item d-flex align-items-center">
-                                            <img src="assets/img/flag/russia-flag.jpg" class="shadow-sm" alt="flag"/>
+                                            <img src="../assets/img/flag/russia-flag.jpg" class="shadow-sm" alt="flag"/>
                                             <span>Rus</span>
                                         </a>
                                         <a href="#" class="dropdown-item d-flex align-items-center">
-                                            <img src="assets/img/flag/us-flag.jpg" class="shadow-sm" alt="flag"/>
+                                            <img src="../assets/img/flag/us-flag.jpg" class="shadow-sm" alt="flag"/>
                                             <span>Ita</span>
                                         </a>
                                     </div>

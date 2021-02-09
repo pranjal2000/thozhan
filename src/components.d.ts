@@ -36,8 +36,8 @@ export namespace Components {
         "ngo": any;
     }
     interface NgoProjectsDetail {
-        "project": any;
-        "projectSlug": string;
+        "ngo": any;
+        "projectID": string;
     }
     interface NgoTeam {
         "ngo": any;
@@ -172,8 +172,8 @@ declare namespace LocalJSX {
         "ngo"?: any;
     }
     interface NgoProjectsDetail {
-        "project"?: any;
-        "projectSlug"?: string;
+        "ngo"?: any;
+        "projectID"?: string;
     }
     interface NgoTeam {
         "ngo"?: any;

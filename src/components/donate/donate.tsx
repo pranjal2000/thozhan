@@ -33,376 +33,7 @@ export class NgoDonate{
             </div>
           </div>
           <ngo-header></ngo-header>
-          {/* <div class="navbar-area  navbar-style-three">
-            <div class="huruma-responsive-nav">
-                <div class="container">
-                    <div class="huruma-responsive-menu">
-                        <div class="logo">
-                            <a href="/">
-                                <img src="assets/img/logo-3.png" class="white-logo" alt="logo"/>
-                                <img src="assets/img/logo-2.png" class="black-logo" alt="image"/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="huruma-nav">
-                <div class="container">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/img/logo-3.png" class="white-logo" alt="logo"/>
-                            <img src="assets/img/logo-2.png" class="black-logo" alt="image"/>
-                        </a>
-
-                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a href="/" class="nav-link">
-                                        Home 
-                                        <i class='bx bx-chevron-down'></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="/" class="nav-link">
-                                                Home One
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="/" class="nav-link">
-                                                Home Two
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="/" class="nav-link">
-                                                Home Three
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="/" class="nav-link">
-                                                Home Four
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a href="/about" class="nav-link">
-                                        About
-                                    </a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a href="/causes" class="nav-link">
-                                        Causes 
-                                        <i class='bx bx-chevron-down'></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="/causes" class="nav-link">
-                                                Causes
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="single-causes.html" class="nav-link">
-                                                Single Causes
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        Pages 
-                                        <i class='bx bx-chevron-down'></i>
-                                    </a>
-
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="/about" class="nav-link">
-                                                About
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="/team" class="nav-link">
-                                                Team
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="/gallery" class="nav-link">
-                                                Gallery
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                Events 
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="events.html" class="nav-link">
-                                                        Events
-                                                    </a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="single-events.html" class="nav-link">
-                                                        Events Details
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="faq.html" class="nav-link">
-                                                Faq
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="feedback.html" class="nav-link">
-                                                Feedback
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                User 
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="log-in.html" class="nav-link">
-                                                        Log In
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="sign-up.html" class="nav-link">
-                                                        Sign Up
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="recover-password.html" class="nav-link">
-                                                        Recover Password
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    
-                                        <li class="nav-item">
-                                            <a href="error-404.html" class="nav-link">
-                                                404 Error
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="/contact" class="nav-link active">
-                                                Contact
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a href="/causes" class="nav-link">
-                                        Blog 
-                                        <i class='bx bx-chevron-down'></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="blog-1.html" class="nav-link">
-                                                Blog Grid
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="blog-2.html" class="nav-link">
-                                                Blog Right Sidebar
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="single-blog.html" class="nav-link">
-                                                Blog Details
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a href="/contact" class="nav-link active">
-                                        Contact
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <div class="others-options">
-                                <div class="dropdown language-switcher d-inline-block">
-                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <img src="assets/img/flag/france-flag.jpg" class="shadow" alt="image"/>
-                                        <span>Eng <i class='bx bx-chevron-down'></i></span>
-                                    </button>
-
-                                    <div class="dropdown-menu">
-                                        <a href="#" class="dropdown-item d-flex align-items-center">
-                                            <img src="assets/img/flag/germany-flag.jpg" class="shadow-sm" alt="flag"/>
-                                            <span>Ger</span>
-                                        </a>
-                                        <a href="#" class="dropdown-item d-flex align-items-center">
-                                            <img src="assets/img/flag/italy-flag.jpg" class="shadow-sm" alt="flag"/>
-                                            <span>Fre</span>
-                                        </a>
-                                        <a href="#" class="dropdown-item d-flex align-items-center">
-                                            <img src="assets/img/flag/spain-flag.jpg" class="shadow-sm" alt="flag"/>
-                                            <span>Spa</span>
-                                        </a>
-                                        <a href="#" class="dropdown-item d-flex align-items-center">
-                                            <img src="assets/img/flag/russia-flag.jpg" class="shadow-sm" alt="flag"/>
-                                            <span>Rus</span>
-                                        </a>
-                                        <a href="#" class="dropdown-item d-flex align-items-center">
-                                            <img src="assets/img/flag/us-flag.jpg" class="shadow-sm" alt="flag"/>
-                                            <span>Ita</span>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="option-item"><i class="search-btn bx bx-search"></i>
-                                    <i class="close-btn bx bx-x"></i>
-                                    <div class="search-overlay search-popup">
-                                        <div class='search-box'>
-                                            <form class="search-form">
-                                                <input class="search-input" name="search" placeholder="Search" type="text"/>
-
-                                                <button class="search-button" type="submit">
-                                                    <i class="bx bx-search"></i>
-                                                </button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="burger-menu">
-                                    <i class="flaticon-menu"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        {/*  -- End Navbar Area - */}
-
-        {/*  -- Sidebar Modal - */}
-        {/* <div class="sidebar-modal">
-          <div class="sidebar-modal-inner">
-            <div class="sidebar-about-area">
-              <div class="title">
-                <h2>About Us</h2>
-                <p>{this.ngo.description}</p>
-              </div>
-            </div>
-
-            <div class="sidebar-instagram-feed">
-              <h2>Instagram</h2>
-              <ul>
-                <li>
-                  <a href={this.ngo.reachOut.instagram}>
-                    <img src="assets/img/sidebar/1.jpg" alt="image" />
-                  </a>
-                </li>
-                <li>
-                  <a href={this.ngo.reachOut.instagram}>
-                    <img src="assets/img/sidebar/2.jpg"alt="image" />
-                  </a>
-                </li>
-                <li>
-                  <a href={this.ngo.reachOut.instagram}>
-                    <img src="assets/img/sidebar/3.jpg" alt="image" />
-                  </a>
-                </li>
-                <li>
-                  <a href={this.ngo.reachOut.instagram}>
-                    <img src="assets/img/sidebar/4.jpg" alt="image" />
-                  </a>
-                </li>
-                <li>
-                  <a href={this.ngo.reachOut.instagram}>
-                    <img src="assets/img/sidebar/5.jpg" alt="image" />
-                  </a>
-                </li>
-                <li>
-                  <a href={this.ngo.reachOut.instagram}>
-                    <img src="assets/img/sidebar/6.jpg" alt="image" />
-                  </a>
-                </li>
-                <li>
-                  <a href={this.ngo.reachOut.instagram}>
-                    <img src="assets/img/sidebar/7.jpg" alt="image" />
-                  </a>
-                </li>
-                <li>
-                  <a href={this.ngo.reachOut.instagram}>
-                    <img src="assets/img/sidebar/8.jpg" alt="image" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="sidebar-contact-area">
-              <div class="contact-info">
-                <div class="contact-info-content">
-                  <h2>
-                    <a href="#">
-                      {this.ngo.reachOut.phone1}
-                    </a>
-                    <span>OR</span>
-                    <a href='#'>
-                      {this.ngo.reachOut.email}
-                    </a>
-                  </h2>
-
-                  <ul class="social">
-                    <li>
-                      <a href={this.ngo.reachOut.facebook} target="_blank">
-                        <i class="flaticon-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href={this.ngo.reachOut.twitter} target="_blank">
-                        <i class="flaticon-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href={this.ngo.reachOut.instagram} target="_blank">
-                        <i class="flaticon-instagram"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href={this.ngo.reachOut.linkedin} target="_blank">
-                        <i class="flaticon-linkedin"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href={this.ngo.reachOut.pinterest} target="_blank">
-                        <i class="flaticon-pinterest"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <span class="close-btn sidebar-modal-close-btn">
-              <i class="flaticon-close"></i>
-            </span>
-          </div>
-        </div> */}
+          
            
           <div class="page-title-area" style={{'background-image': img}}>
             <div class="d-table">
@@ -428,106 +59,84 @@ export class NgoDonate{
                     <h3>Why Help?</h3>
 
                     <div class="contact-content">
-                    <h3>GIVING PROMOTES FEELINGS OF HAPPINESS</h3>
-                      <p>Helping others feels good. When you donate to a charity that is important to you, you not only help them continue their vital work, you’re also improving your emotional wellbeing, a win-win situation!</p>
-                    <h3> YOU CAN REAP SOCIAL, PHYSICAL, MENTAL, AND SPIRITUAL BENEFITS</h3>
-                    <p>By giving your time to a charity, you get the opportunity to build your social circles by working with like-minded people</p>
+                      <h3>GIVING PROMOTES FEELINGS OF HAPPINESS</h3>
+                      <p>Helping others feels good. When you donate to a charity that is important to you, you not only
+                        help them continue their vital work, you’re also improving your emotional wellbeing, a win-win
+                        situation!</p>
+                      <h3> YOU CAN REAP SOCIAL, PHYSICAL, MENTAL, AND SPIRITUAL BENEFITS</h3>
+                      <p>By giving your time to a charity, you get the opportunity to build your social circles by
+                        working with like-minded people</p>
                     </div>
 
-                    {/* <div class="info-contact">
-                      <i class="flaticon-call"></i>
-                      <h3>Call Us</h3>
-                      <span><a href="#">{this.ngo.reachOut.phone1}</a></span>
-                    </div>
-
-                    <div class="info-contact">
-                      <i class="flaticon-email"></i>
-                      <h3>Email Us</h3>
-                      <span>
-                        <a href="#">
-                          {this.ngo.reachOut.email}
-                        </a>
-                      </span>
-                    </div> */}
                   </div>
                 </div>
-                
+
 
                 <div class="col-lg-8">
-                
+
                   <div class="contact-area">
                     <div class="contact-content">
                       <h3>Donate Here!</h3>
-                      <p>Having the power to improve the lives of others is, to many people, a privilege, and one that comes with its own sense of obligation.</p>
+                      <p>Having the power to improve the lives of others is, to many people, a privilege, and one that
+                        comes with its own sense of obligation.</p>
                     </div>
-                    
-                    
 
-                    <div class="contact-form">
-                      <form id="contactForm">
+
+
+                    <div class="causes-details-payment">
+                      <div class="payment-method">
+                        <div class="causes-details-btn">
+                            <a href="#" class="default-btn">
+                              Login with Grassroots
+                              <span></span>
+                            </a>
+                          </div>
+                      </div><br/>
+
+                      <form class="contact-form">
                         <div class="row">
-                        <div class = "col-lg-12">
-                    <div class="send-btn">
-                              <button type="submit" class="default-btn">
-                                Login with Grassroots
-
-                                <i class="flaticon-right"></i>
-                                <span> </span>
-                              </button>
-                            </div>
-                    </div>
-                          <div class="col-lg-12 col-md-12">
-                              <br/>
+                          <div class="col-lg-12">
                             <div class="form-group">
-                            <select class='form-control' >
-                                 <option> General Donation </option>
-                            </select>
-
-                              <div class="help-block with-errors"></div>
-                            </div>
-                          </div>
-
-                          <div class="col-lg-12 col-md-12">
-                            <div class="form-group">
-                              <input type="number" name="amount" id="amount" required
-                                data-error="Please enter your amount" class="form-control" min="100" placeholder="Amount" />
-                              <div class="help-block with-errors"></div>
-                            </div>
-                          </div>
-
-                          <div class="col-lg-12 col-md-12">
-                            <div class="form-group">
-                              <input type="text" name="refered_by" id="refered_by" class="form-control" placeholder="Refered by" />
-                              <div class="help-block with-errors"></div>
-                            </div>
-                          </div>
-
-                          <div class="col-lg-12 col-md-12">
-                            <div class="form-group">
-                              <input type="checkbox" style={{ 'width': '18px', 'height': '18px' }}id="anonymous" name="anonymous" value="yes" />
-                              <span style={{ 'padding-left': '16px' }} > Make Anonymous </span>
-                              <div class="help-block with-errors"></div>
-                            </div>
-                          </div>
-
-                          <div class="col-lg-12 col-md-12">
-                            <div class="form-group">
-                              <textarea name="message" class="form-control" id="message" cols={30} rows={6} required
-                                data-error="Write your cause" placeholder="Why am I donating?"></textarea>
-                              <div class="help-block with-errors"></div>
+                              <select class='form-control'>
+                                <option> General Donation </option>
+                              </select>
                             </div>
                           </div>
 
                           <div class="col-lg-12">
-                            <div class="send-btn">
-                              <button type="submit" class="default-btn">
-                                Donate
-                                <i class="flaticon-right"></i>
-                                <span></span>
-                              </button>
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" placeholder="Referred by" />
                             </div>
-                            <div id="msgSubmit" class="h3 text-center hidden"></div>
-                            <div class="clearfix"></div>
+                          </div>
+
+                          <div class="col-lg-12">
+                            <div class="form-group">
+                            <input type="checkbox" style={{ 'width': '18px', 'height': '18px' }} id="anonymous" name="anonymous" value="yes"/>
+                                <span style={{ 'padding-left': '16px' }}> Make Anonymous </span>
+                            </div>
+                          </div>
+                          
+                          <div class="col-lg-12">
+                            <div class="form-group">
+                              <input type="number" min= "100" name="msg_subject" id="msg_subject" class="form-control"
+                                placeholder="Rs.100.00" />
+                            </div>
+                          </div>
+
+                          <div class="col-lg-12">
+                            <div class="form-group">
+                            <textarea name="message" class="form-control" id="message" cols={30} rows={6} required
+                                data-error="Write your message" placeholder="Write Something"></textarea>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-12">
+                            <div class="causes-details-btn">
+                              <a href="#" class="default-btn">
+                                Donate Now
+                                <span></span>
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </form>

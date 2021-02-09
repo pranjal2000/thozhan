@@ -1,15 +1,17 @@
-import { Component, h, Prop} from '@stencil/core';
-// import * as ngo                 from     '../../assets/thozhan.json';
+import { Component, h, Prop, State} from '@stencil/core';
+import * as ngo                 from     '../../assets/thozhan.json';
 @Component({
   tag: 'ngo-projects-detail',
   styleUrl: 'detail.css',
 
 })
 export class NgoProjectsDetail {
- @Prop() project                 :   any                 =   {};
- @Prop() projectSlug : string;
+ @Prop() ngo                 :   any                 =   ngo;
+ @Prop() projectID : string;
+ @State() project            :   any                 =   {};
  componentWillLoad() {
   console.log('NgoProjectsDetail :: componentWillLoad');
+  this.project            =   (this.ngo.projects.filter(p => p.id === this.projectID))[0];
 }
 
 componentDidLoad() {
@@ -18,17 +20,17 @@ componentDidLoad() {
 
   
   render() {
-
+	var img = 'url(' + this.project.photo.url + ')';
     return [
-		<ion-contect>
-		<div class="preloader">
+		<ion-content>
+		{/* <div class="preloader">
           <div class="preloader">
             <span></span>
             <span></span>
           </div>
-        </div>
+        </div> */}
 			<ngo-header></ngo-header>
-			<div class="page-title-area">
+			<div class="page-title-area"style = {{'background-image':img}}>
             <div class="d-table">
                 <div class="d-table-cell">
                     <div class="container">
@@ -46,22 +48,19 @@ componentDidLoad() {
         {/* <!-- End Page Title Area -->
 
         <!-- Start Causes Details Area --> */}
-        <section class="causes-details-area ptb-100">
+        <section class="causes-details-area ptb-100" >
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-12">
+                    <div class="col-lg-12 col-md-12">
                         <div class="causes-details-desc">
-                            <div class="causes-details-image">
-                                <img src={this.project.photo.url} alt="image"/>
-                            </div>
 
                             <div class="causes-details-text">
                                 <div class="progress pink">
-                                    <div class="progress-bar">
+                                    {/* <div class="progress-bar">
                                         <div class="progress-value" style={{"width": "50%;"}}>50%</div>
-                                    </div>
+                                    </div> */}
                                 </div>
-                                <ul>
+                                {/* <ul>
                                     <li>
                                         <span>Raised:</span> 
                                         $5000.00
@@ -70,13 +69,14 @@ componentDidLoad() {
                                         <span>Goal:</span> 
                                         $8000.00
                                     </li>
-                                </ul>
-                                <h3>Education for Poor Children</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, accusantium cupiditate exercitationem quaerat dolorum architecto fugiat suscipit praesentium iusto? Fuga cupiditate laboriosam fugiat in, maiores a quidem labore autem accusantium! lore</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia cupiditate nihil ipsam atque! Autem dolores id ducimus, ipsum magnam at quidem praesentium possimus harum quas, facere explicabo impedit atque doloremque.</p>
+                                </ul> */}
+                                <h3>{this.project.name}</h3>
+								<p>{this.project.description}</p>
+                                {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, accusantium cupiditate exercitationem quaerat dolorum architecto fugiat suscipit praesentium iusto? Fuga cupiditate laboriosam fugiat in, maiores a quidem labore autem accusantium! lore</p> */}
+                                {/* <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia cupiditate nihil ipsam atque! Autem dolores id ducimus, ipsum magnam at quidem praesentium possimus harum quas, facere explicabo impedit atque doloremque.</p> */}
                             </div>
 
-                            <div class="causes-details-meta">
+                            {/* <div class="causes-details-meta">
 								<div class="entry-meta">
 									<ul>
 										<li>
@@ -93,9 +93,9 @@ componentDidLoad() {
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.</p>
 								
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.</p>
-                            </div>
+                            </div> */}
                             
-                            <div class="causes-details-payment">
+                            {/* <div class="causes-details-payment">
 								<div class="payment-method">
 									<h3>Select Payment Method</h3>
 									<p>
@@ -158,11 +158,11 @@ componentDidLoad() {
                                         </div>
                                     </div>
                                 </form>
-							</div>
+							</div> */}
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-12">
+                    {/* <div class="col-lg-4 col-md-12">
 						<aside class="widget-area" id="secondary">
 							<div class="widget widget_search">
 								<form class="search-form">
@@ -276,12 +276,12 @@ componentDidLoad() {
 								</div>
 							</section>
 						</aside>
-					</div>
+					</div> */}
                 </div>
             </div>
         </section>
 			<ngo-footer></ngo-footer>
-		</ion-contect>
+		</ion-content>
   
     ];
   }
