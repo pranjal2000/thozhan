@@ -145,7 +145,7 @@ componentDidLoad() {
 
                   <div class="footer-news">
                     <a href="single-blog.html">
-                      <img src={this.ngo.media[0].photo.url}alt="image" />
+                      <img src={this.ngo.media[0].photo.url} style={{'object-fit':'cover'}} alt="image" />
                       <span>{this.ngo.media[0].publicationName}</span>
                       <h4>{this.ngo.media[0].name}</h4>
                       
@@ -155,7 +155,7 @@ componentDidLoad() {
 
                   <div class="footer-news">
                     <a href="single-blog.html">
-                      <img src={this.ngo.media[1].photo.url} alt="image" />
+                      <img src={this.ngo.media[1].photo.url} style={{'object-fit':'cover'}} alt="image" />
                       <span>{this.ngo.media[1].publicationName}</span>
                       <h4>{this.ngo.media[1].name}</h4>
                     </a>

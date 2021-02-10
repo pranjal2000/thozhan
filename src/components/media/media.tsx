@@ -52,7 +52,7 @@ componentDidLoad() {
                 {this.ngo.media.slice(0, 15).map(m => (
                     <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-blog">
-                        <img src={m.photo.url} alt="image"/>
+                        <img src={m.photo.url} style={{'object-fit':'cover'}} alt="image"/>
 
                         <div class="content">
                             <span>{m.publicationName}</span>

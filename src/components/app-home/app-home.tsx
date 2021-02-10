@@ -165,6 +165,7 @@ componentDidLoad() {
                                         <li class="nav-item">
                                             <a class="nav-link">
                                             <ion-router-link href={`/projects/${p.id}`} > {p.name} </ion-router-link>
+                                            {/* {p.name} */}
                                             </a>
                                         </li>))}
                                     </ul>
@@ -177,91 +178,7 @@ componentDidLoad() {
                                         {/* <i class='bx bx-chevron-down'></i> */}
                                     </a>
 
-                                    {/* <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="/about" class="nav-link">
-                                                About
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="/team" class="nav-link">
-                                                Team
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="gallery.html" class="nav-link">
-                                                Gallery
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                Events 
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="events.html" class="nav-link">
-                                                        Events
-                                                    </a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="single-events.html" class="nav-link">
-                                                        Events Details
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="faq.html" class="nav-link">
-                                                Faq
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="feedback.html" class="nav-link">
-                                                Feedback
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                User 
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="log-in.html" class="nav-link">
-                                                        Log In
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="sign-up.html" class="nav-link">
-                                                        Sign Up
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="recover-password.html" class="nav-link">
-                                                        Recover Password
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
                                     
-                                        <li class="nav-item">
-                                            <a href="error-404.html" class="nav-link">
-                                                404 Error
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="/contact" class="nav-link">
-                                                Contact
-                                            </a>
-                                        </li>
-                                    </ul> */}
                                 </li>
 
                                 <li class="nav-item">
@@ -1010,14 +927,7 @@ componentDidLoad() {
                         <p>{this.ngo.whyHelpMatters[1].text}</p>
                         <p>{this.ngo.whyHelpMatters[2].text}</p>
 
-                        {/* <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, soluta, aspernatur
-                          dolorum sequi quisquam ullam in pariatur nihil dolorem cumque excepturi totam. Qui excepturi
-                          quasi cumque placeat fuga. Ea, eius?</p> */}
-                        {/* <a class="default-btn" href="#">
-                          Our Mission
-                          <span></span>
-                          <i class="flaticon-right"></i>
-                        </a> */}
+                        
                       </div>
                     </div>
                   </div>
@@ -1042,8 +952,7 @@ componentDidLoad() {
                       Meet Our Team
                     </span>
                     <h2>Talented Team behind {this.ngo.name}</h2>
-                    <p>Quis ipsum suspendice consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                      dolore magna aliqua. Quis ipsum suspendices gravida.</p>
+                    <p>Teamwork is the ability to work together toward a common vision</p>
                   </div>
                 </div>
 
@@ -1058,10 +967,10 @@ componentDidLoad() {
               </div>
             </div>
 
-            <div class="row">
+            <div class="row" style = {{'justify-content': 'center'}}>
             {/* { this.ngo.team.length > 0 ? */}
                {/* <div class="col-lg-3 col-sm-6"> */}
-                {this.ngo.team.slice(0, 8).map(m => (
+                {this.ngo.team.slice(0, 4).map(m => (
                   <div class="col-lg-3 col-sm-6">
                 <div class="single-team-member">
                   <div class="team-image">
@@ -1118,115 +1027,7 @@ componentDidLoad() {
                 ))}
               {/* // </div> : null}  */}
 
-              {/* <div class="col-lg-3 col-sm-6">
-                <div class="single-team-member">
-                  <div class="team-image">
-                    <img src="assets/img/team/8.png" alt="image" />
-                  </div>
-
-                  <ul class="social-btn">
-                    <li>
-                      <a href="#">
-                        <i class="flaticon-facebook"></i>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        <i class="flaticon-twitter"></i>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        <i class="flaticon-instagram"></i>
-                      </a>
-                    </li>
-                  </ul>
-
-                  <div class="member-content">
-                    <h3>Smith Jhon</h3>
-                    <span>Manager</span>
-                  </div>
-
-                  <div class="team-icon">
-                    <i class="flaticon-plus"></i>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-sm-6">
-                <div class="single-team-member">
-                  <div class="team-image">
-                    <img src="assets/img/team/9.png" alt="image" />
-                  </div>
-
-                  <ul class="social-btn">
-                    <li>
-                      <a href="#">
-                        <i class="flaticon-facebook"></i>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        <i class="flaticon-twitter"></i>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        <i class="flaticon-instagram"></i>
-                      </a>
-                    </li>
-                  </ul>
-
-                  <div class="member-content">
-                    <h3>Ched Kurtsovski</h3>
-                    <span>Volunteer</span>
-                  </div>
-
-                  <div class="team-icon">
-                    <i class="flaticon-plus"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="single-team-member">
-                  <div class="team-image">
-                    <img src="assets/img/team/10.png" alt="image" />
-                  </div>
-
-                  <ul class="social-btn">
-                    <li>
-                      <a href="#">
-                        <i class="flaticon-facebook"></i>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        <i class="flaticon-twitter"></i>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        <i class="flaticon-instagram"></i>
-                      </a>
-                    </li>
-                  </ul>
-
-                  <div class="member-content">
-                    <h3>Ched Kurtsovski</h3>
-                    <span>Volunteer</span>
-                  </div>
-
-                  <div class="team-icon">
-                    <i class="flaticon-plus"></i>
-                  </div>
-                </div>
-              </div> */}
+              
             </div>
           </div>
         </section>
@@ -1235,7 +1036,7 @@ componentDidLoad() {
 
         {/*
         <!-- Start Events Area --> */}
-        <section class="event-section pt-100">
+        <section class="event-section pt-100" style={{'background-image':'url()'}}>
           <div class="container">
             <div class="section-title">
               <span>
@@ -1243,11 +1044,13 @@ componentDidLoad() {
                 Upcoming Events
               </span>
               <h2>Be ready for Our Events</h2>
-              <p>Event makes suspendice adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Quis ipsum suspendices gravida.</p>
+              <p>COMING SOON...</p>
+              <br/>
+              <br/>
+              <br/>
             </div>
 
-            <div class="event-slider owl-carousel owl-theme">
+            {/* <div class="event-slider owl-carousel owl-theme">
               <div class="event-item">
                 <div class="row">
                   <div class="col-lg-4">
@@ -1387,7 +1190,7 @@ componentDidLoad() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
         {/*
@@ -1419,18 +1222,7 @@ componentDidLoad() {
                       </li>
                       ))}
                         
-                        {/* <li>
-                          <i class='bx bxs-star'></i>
-                        </li>
-                        <li>
-                          <i class='bx bxs-star'></i>
-                        </li>
-                        <li>
-                          <i class='bx bxs-star'></i>
-                        </li>
-                        <li>
-                          <i class='bx bxs-star'></i>
-                        </li> */}
+                        
                       </ul>
                     </div>
                   </div>
@@ -1479,8 +1271,7 @@ componentDidLoad() {
           <div class="container">
             <div class="section-title">
               <h2>Want you know How Can Help?</h2>
-              <p>Toiken ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntlabore et
-                dolore magna aliqua. Ut enim ad minim.</p>
+              <p>Since you get more joy out of giving joy to others, you should put a good deal of thought into the happiness that you are able to give.</p>
               <a href="/donate" class="donate-btn">
                 Donate Now
                 <i class="flaticon-right"></i>
@@ -1511,7 +1302,7 @@ componentDidLoad() {
             <div class="row">
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="single-blog">
-                  <img src={this.ngo.media[0].photo.url} alt="image" />
+                  <img src={this.ngo.media[0].photo.url} style={{'object-fit':'cover'}} alt="image" />
 
                   <div class="content">
                     <a href="#">
@@ -1530,7 +1321,7 @@ componentDidLoad() {
 
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="single-blog">
-                  <img src={this.ngo.media[1].photo.url} alt="image" />
+                  <img src={this.ngo.media[1].photo.url} style={{'object-fit':'cover'}} alt="image" />
 
                   <div class="content">
                     <a href="#">
@@ -1549,7 +1340,7 @@ componentDidLoad() {
 
               <div class="col-lg-4 col-md-6 col-sm-6 offset-sm-3 offset-lg-0">
                 <div class="single-blog">
-                  <img src={this.ngo.media[2].photo.url} alt="image" />
+                  <img src={this.ngo.media[2].photo.url} style={{'object-fit':'cover'}} alt="image" />
 
                   <div class="content">
                     <a href="#">
@@ -1565,8 +1356,13 @@ componentDidLoad() {
                   </div>
                 </div>
               </div>
+              <a href="/media" class="causes-btn-one">
+                      <h4>See More <i class="flaticon-right"></i></h4>
+                      {/* <i class="flaticon-right"></i> */}
+                    </a>
             </div>
           </div>
+          
         </section>
         {/*
         <!-- End Blog Area --> */}
@@ -1574,194 +1370,7 @@ componentDidLoad() {
         {/*
         <!-- Start Footer Area --> */}
         
-        {/* <footer class="footer-section pt-100">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                  <h3>Contact info</h3>
-
-                  <div class="footer-info-contact">
-                    <i class="flaticon-pin"></i>
-                    <h3>Location</h3>
-                    <span>{this.ngo.address}</span>
-                  </div>
-
-                  <div class="footer-info-contact">
-                    <i class="flaticon-call"></i>
-                    <h3>Call Us</h3>
-                    <span><a href="tel:+882-569-756">{this.ngo.reachOut.phone1}</a></span>
-                  </div>
-
-                  <div class="footer-info-contact">
-                    <i class="flaticon-email"></i>
-                    <h3>Email Us</h3>
-                    <span>
-                      <a href="mailto:hello@huruma.com">
-                        {this.ngo.reachOut.email}
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                  <h3>Our Support</h3>
-
-                  <ul class="footer-quick-links">
-                    <li>
-                      <a href="#">
-                        Private Policies
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/donate">
-                        Donate Now
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/volunteer">
-                        Become a Volunteer
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        Careers
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/contact">
-                        Contact Us
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        Paid programs
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        Partnership
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                  <h3>Our Services</h3>
-
-                  <ul class="footer-quick-links">
-                    <li>
-                      <a href="/donate">
-                        Donate
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        Sponsor
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        Fundraise
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        Volunteer
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        Partner
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        Jobs
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        Form
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                  <h3>Recent News</h3>
-
-                  <div class="footer-news">
-                    <a href="single-blog.html">
-                      <img src={this.ngo.media[0].photo.url}alt="image" />
-                      <span>{this.ngo.media[0].publicationName}</span>
-                      <h4>{this.ngo.media[0].name}</h4>
-                      
-                      
-                    </a>
-                  </div>
-
-                  <div class="footer-news">
-                    <a href="single-blog.html">
-                      <img src={this.ngo.media[1].photo.url} alt="image" />
-                      <span>{this.ngo.media[1].publicationName}</span>
-                      <h4>{this.ngo.media[1].name}</h4>
-                    </a>
-                    <br/>
-                    <h4 class ="footer-info-contact">
-                    <a href="/media">
-                     See More
-                    </a>
-                    </h4>
-                    
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="copyright-area">
-            <div class="container">
-              <div class="copyright-area-content">
-                <div class="row align-items-center">
-                  <div class="col-lg-4">
-                    <div class="copyright-logo">
-                      <img src={this.ngo.logo.url} alt="image" />
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6">
-                    <p>
-                      <i class="far fa-copyright"></i>
-                      2020 {this.ngo.name }. All Rights Reserved by
-                      <a href="https://envytheme.com/" target="_blank">
-                        EnvyTheme
-                      </a>
-                    </p>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6">
-                    <ul>
-                      <li>
-                        <a href="terms-condition.html">Terms & Conditions</a>
-                      </li>
-                      <li>
-                        <a href="privacy-policy.html">Privacy Policy</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer> */}
+        
         {/*
         <!-- End Footer Area --> */}
 

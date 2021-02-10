@@ -100,7 +100,7 @@ componentDidLoad() {
                         <i class="flaticon-instagram"></i>
                     </div>
 
-                    <a href="https://www.instagram.com/" target="_blank"></a>
+                    <a href={this.ngo.reachOut.instagram} target="_blank"></a>
                 </div>
 
                 <div class="instagram-box">
@@ -110,7 +110,7 @@ componentDidLoad() {
                         <i class="flaticon-instagram"></i>
                     </div>
 
-                    <a href="https://www.instagram.com/" target="_blank"></a>
+                    <a href={this.ngo.reachOut.instagram} target="_blank"></a>
                 </div>
 
                 <div class="instagram-box">
@@ -120,7 +120,7 @@ componentDidLoad() {
                         <i class="flaticon-instagram"></i>
                     </div>
 
-                    <a href="https://www.instagram.com/" target="_blank"></a>
+                    <a href={this.ngo.reachOut.instagram}target="_blank"></a>
                 </div>
 
                 <div class="instagram-box">
@@ -130,7 +130,7 @@ componentDidLoad() {
                         <i class="flaticon-instagram"></i>
                     </div>
 
-                    <a href="https://www.instagram.com/" target="_blank"></a>
+                    <a href={this.ngo.reachOut.instagram} target="_blank"></a>
                 </div>
 
                 <div class="instagram-box">
@@ -140,7 +140,7 @@ componentDidLoad() {
                         <i class="flaticon-instagram"></i>
                     </div>
 
-                    <a href="https://www.instagram.com/" target="_blank"></a>
+                    <a href={this.ngo.reachOut.instagram} target="_blank"></a>
                 </div>
             </div>
         </div>
