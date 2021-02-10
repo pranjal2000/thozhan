@@ -62,11 +62,11 @@ componentDidLoad() {
                     <p>Remember that the happiest people are not those getting more, but those giving more</p>
                 </div>
 
-                <div class="row">
+                <div class="row"style = {{'justify-content': 'center'}}>
                 {this.ngo.projects.slice(0, 9).map(m => (
                     <div class="col-lg-4 col-md-6">
                         <div class="single-causes">
-                            <img src={m.photo.url} alt="image"/>
+                            <img src={m.photo.url} style={{'object-fit':'cover'}}  alt="image"/>
                             <div class="icon">
                                 <i class="flaticon-book-1"></i>
                             </div>
