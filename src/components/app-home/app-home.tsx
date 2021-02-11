@@ -731,7 +731,7 @@ componentDidLoad() {
                     </div> */}
 
                     <a class="causes-btn-one">
-                    <ion-router-link href= {`/projects/${this.ngo.projects[1].id}`}>View More</ion-router-link>
+                    <ion-router-link href= {`/projects/${this.ngo.projects[3].id}`}>View More</ion-router-link>
                       <i class="flaticon-right"></i>
                     </a>
                   </div>
