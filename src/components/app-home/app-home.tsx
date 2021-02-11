@@ -665,8 +665,8 @@ componentDidLoad() {
                       <p>Raised by 60 people within 10 days</p>
                     </div> */}
 
-                    <a href={this.ngo.projects[0].link} class="causes-btn-one">
-                      Donate Now
+                    <a  class="causes-btn-one">
+                    <ion-router-link class= "main-color" href= {`/projects/${this.ngo.projects[0].id}`}>View More</ion-router-link>
                       <i class="flaticon-right"></i>
                     </a>
                   </div>
@@ -697,8 +697,9 @@ componentDidLoad() {
                       <p>Raised by 40 people within 12 days</p>
                     </div> */}
 
-                    <a href={this.ngo.projects[1].link} class="causes-btn-one">
-                      Donate Now
+                    <a class="causes-btn-one">
+                    
+                    <ion-router-link href= {`/projects/${this.ngo.projects[1].id}`}>View More</ion-router-link>
                       <i class="flaticon-right"></i>
                     </a>
                   </div>
@@ -729,8 +730,8 @@ componentDidLoad() {
                       <p>Raised by 50people within 20days</p>
                     </div> */}
 
-                    <a href={this.ngo.projects[3].link} class="causes-btn-one">
-                      Donate Now
+                    <a class="causes-btn-one">
+                    <ion-router-link href= {`/projects/${this.ngo.projects[1].id}`}>View More</ion-router-link>
                       <i class="flaticon-right"></i>
                     </a>
                   </div>
